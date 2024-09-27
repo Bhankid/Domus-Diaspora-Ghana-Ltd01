@@ -193,11 +193,11 @@ main {
   padding-left: 120px;
   color: var(--color-white);
   user-select: none;
-  margin-block: 65px;
+  margin-block: 75px;
 }
 
 .content h1 {
-  font-family: cursive;
+  font-family: 'poppins';
   font-size: clamp(2.4rem, 3vw, 5rem);
   font-weight: 700;
   background: -webkit-linear-gradient(
@@ -209,8 +209,8 @@ main {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   line-height: 1;
-  margin-bottom: 10px;
-  padding-left: 10px;
+  margin-top: 30px;
+  padding-bottom: 30px;
 }
 
 .content p {
@@ -330,7 +330,7 @@ main {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius: 8px;
+  border-radius: 3px;
   max-width: 100%;
 }
 
@@ -399,8 +399,8 @@ main {
 }
 
 .partner-heading {
-  font-family: cursive;
-  font-size: clamp(1.4rem, 4vw, 6rem);
+  font-family: 'poppins';
+  font-size: clamp(1.1rem, 3vw, 5rem);
   font-weight: 700;
   background: -webkit-linear-gradient(
     0deg,
@@ -647,8 +647,8 @@ blog {
 
 .blog-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
 }
 
 .blog-post {
@@ -716,6 +716,7 @@ blog {
   cursor: pointer;
   margin: 20px auto;
   display: block;
+  font-size: 1.2rem;
 }
 
 .load-more:hover {
@@ -732,6 +733,12 @@ blog {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  gap: 60px;
 }
 
 .contact-heading {
@@ -754,6 +761,7 @@ blog {
   border: 1px solid #ddd;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  grid-column: 1;
 }
 
 .form-group {
@@ -792,7 +800,8 @@ blog {
 }
 
 .contact-info {
-  margin-top: 40px;
+  margin-top: 5px;
+  grid-column: 2;
 }
 
 .contact-info-item {
@@ -825,7 +834,6 @@ blog {
   color: #666;
   margin-bottom: 10px;
 }
-
 /* Footer */
 .footer {
   background-color: hsla(277, 27%, 58%, 0.6);
@@ -896,7 +904,7 @@ blog {
 @media (max-width: 1200px) {
   .content {
     padding-left: 90px;
-    margin-block: 5px;
+    margin-block: 10px;
   }
 
   .content p {
@@ -905,7 +913,7 @@ blog {
 
   .card {
     width: 250px;
-    height: 390px;
+    height: 400px;
   }
 }
 
@@ -921,7 +929,7 @@ blog {
 
   .card {
     width: 250px;
-    height: 380px;
+    height: 390px;
   }
 }
 
@@ -932,7 +940,7 @@ blog {
 
   .card {
     width: 200px;
-    height: 300px;
+    height: 320px;
   }
 }
 
@@ -981,8 +989,8 @@ blog {
   }
 
   .card {
-    width: 190px;
-    height: 300px;
+    width: 180px;
+    height: 250px;
   }
 }
 
@@ -1181,7 +1189,7 @@ blog {
     margin: 20px;
   }
   .partner-icon img {
-    width: 40px;
+    width: 100px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   }
@@ -1197,7 +1205,7 @@ blog {
   }
   .partner-icon {
     font-size: 32px;
-    margin: 20px;
+    margin: 15px;
   }
   .partner-icon img {
     width: 95px;
@@ -1215,12 +1223,12 @@ blog {
     margin: 10px;
   }
   .partner-icon {
-    font-size: 22px;
+    font-size: 25px;
     margin: 15px;
   }
 
   .partner-icon img {
-    width: 75px;
+    width: 65px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   }
@@ -1240,7 +1248,7 @@ blog {
   }
 
   .partner-icon img {
-    width: 55px;
+    width: 50px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   }
@@ -1358,27 +1366,50 @@ blog {
     margin-bottom: 20px;
   }
 }
-
-/* Media Queries for Contact*/
-
-@media (max-width: 1200px) {
-  .contact-container {
-    padding: 0 10px;
+/* Large screens (desktops) */
+@media (min-width: 1200px) {
+  .contact-grid {
+    grid-template-columns: 60% 40%;
   }
 }
 
-@media (max-width: 900px) {
-  .contact-form {
-    padding: 10px;
+/* Medium screens (tablets) */
+@media (min-width: 768px) and (max-width: 1199px) {
+  .contact-grid {
+    grid-template-columns: 55% 45%;
   }
 }
 
-@media (max-width: 600px) {
-  .contact-form {
-    padding: 5px;
+/* Small screens (mobiles) */
+@media (max-width: 767px) {
+  .contact-grid {
+    grid-template-columns: 100%;
   }
-  .form-group input,
-  .form-group textarea {
-    padding: 5px;
+  .contact-form,
+  .contact-info {
+    grid-column: 1;
+  }
+  .contact-info {
+    margin-top: 20px;
+  }
+}
+
+/* Extra small screens (small mobiles) */
+@media (max-width: 479px) {
+  .contact-grid {
+    grid-template-columns: 100%;
+  }
+  .contact-form,
+  .contact-info {
+    grid-column: 1;
+  }
+  .contact-info {
+    margin-top: 20px;
+  }
+  .contact-heading {
+    font-size: 24px;
+  }
+  .contact-subheading {
+    font-size: 14px;
   }
 }
