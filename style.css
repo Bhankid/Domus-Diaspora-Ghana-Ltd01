@@ -102,13 +102,56 @@ body {
 }
 
 .nav-link:hover::after {
-  background-color: var(--color-grey);
+  background-color: rgb(82, 107, 230);
 }
 
 .nav-links li {
   text-align: center;
 }
 
+.dropdown {
+  position: relative;
+}
+
+.dropdown-toggle {
+  cursor: pointer;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  transition: all 0.3s ease-in-out; 
+  opacity: 0; 
+  transform: translateY(-10px); 
+  padding-block: 40px;
+  border-radius: 8px;
+}
+
+.dropdown-menu li {
+  padding: 10px;
+  list-style: none;
+  text-align: left;
+}
+
+
+.dropdown-menu a {
+  color: black;
+  text-decoration: none;
+}
+
+.dropdown-menu a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+  opacity: 1; /* Change opacity on hover */
+  transform: translateY(0px); /* Change transform on hover */
+}
 /* 
 .btn {
   position: relative;

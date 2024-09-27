@@ -11,6 +11,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
@@ -30,15 +31,39 @@
         <i class="fas fa-times" id="close-nav"></i>
       </div>
       <ul id="nav-links" class="nav-links">
-        <li><a href="#hero" class="nav-link">Home</a></li>
-        <li><a href="#about" class="nav-link">About Us</a></li>
-        <li><a href="#projects" class="nav-link">Real Estate</a></li>
-        <li><a href="#contact" class="nav-link">Accommodation</a></li>
-        <li><a href="#contact" class="nav-link">Logistic</a></li>
-        <li><a href="#contact" class="nav-link">Blogs</a></li>
-        <li><a href="#contact" class="nav-link">Contact</a></li>
-        <!-- <a href="#" class="btn"><span>Admin Dashboard</span></a> -->
+    <li><a href="#hero" class="nav-link">Home</a></li>
+    <li><a href="#about" class="nav-link">About Us</a></li>
+    <li class="dropdown">
+      <a href="#" class="nav-link dropdown-toggle">Real Estate <i class='bx bxs-chevron-down'></i></a>
+      <ul class="dropdown-menu">
+        <li><a href="#">Completed Projects</a></li>
+        <li><a href="#">Ongoing Projects</a></li>
       </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="nav-link dropdown-toggle">Accommodation <i class='bx bxs-chevron-down'></i></a>
+      <ul class="dropdown-menu">
+        <li><a href="#">Office Space</a></li>
+        <li><a href="#">Bungalow</a></li>
+        <li><a href="#">Housing</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="nav-link dropdown-toggle">Logistics <i class='bx bxs-chevron-down'></i></a>
+      <ul class="dropdown-menu">
+        <li><a href="#">Hiring Equipment</a></li>
+        <li><a href="#">Building Materials</a></li>
+      </ul>
+    </li>
+    <li class="dropdown"><a href="#" class="nav-link dropdown-toggle">Blogs <i class='bx bxs-chevron-down'></i></a>
+    <ul class="dropdown-menu">
+      <li><a href="#">News Feed</a></li>
+        <li><a href="#">Price Updates</a></li>
+    </ul>
+    </li>
+    <li><a href="#contact" class="nav-link">Contact</a></li>
+    <!-- <a href="#" class="btn"><span>Admin Dashboard</span></a> -->
+  </ul>
     </nav>
     <!-- main | image slider -->
     <main>
