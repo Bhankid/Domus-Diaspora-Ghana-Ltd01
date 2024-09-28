@@ -11,7 +11,10 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
@@ -31,40 +34,49 @@
         <i class="fas fa-times" id="close-nav"></i>
       </div>
       <ul id="nav-links" class="nav-links">
-    <li><a href="#hero" class="nav-link">Home</a></li>
-    <li><a href="#about" class="nav-link">About Us</a></li>
-    <li class="dropdown">
-      <a href="#" class="nav-link dropdown-toggle">Real Estate <i class='bx bxs-chevron-down'></i></a>
-      <ul class="dropdown-menu">
-        <li><a href="#">Completed Projects</a></li>
-        <li><a href="#">Ongoing Projects</a></li>
-        <li><a href="#">Land</a></li>
+        <li><a href="#hero" class="nav-link">Home</a></li>
+        <li><a href="about.html" class="nav-link">About Us</a></li>
+        <li class="dropdown">
+          <a href="#" class="nav-link dropdown-toggle"
+            >Real Estate <i class="bx bxs-chevron-down"></i
+          ></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Completed Projects</a></li>
+            <li><a href="#">Ongoing Projects</a></li>
+            <li><a href="#">Land</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="nav-link dropdown-toggle"
+            >Accommodation <i class="bx bxs-chevron-down"></i
+          ></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Office Space</a></li>
+            <li><a href="#">Bungalow</a></li>
+            <li><a href="#">Housing</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="nav-link dropdown-toggle"
+            >Logistics <i class="bx bxs-chevron-down"></i
+          ></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Hiring Equipment</a></li>
+            <li><a href="#">Building Materials</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#blog" class="nav-link dropdown-toggle"
+            >Blogs <i class="bx bxs-chevron-down"></i
+          ></a>
+          <ul class="dropdown-menu">
+            <li><a href="#blog">News Feed</a></li>
+            <li><a href="#">Price Updates</a></li>
+          </ul>
+        </li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+        <!-- <a href="#" class="btn"><span>Admin Dashboard</span></a> -->
       </ul>
-    </li>
-    <li class="dropdown">
-      <a href="#" class="nav-link dropdown-toggle">Accommodation <i class='bx bxs-chevron-down'></i></a>
-      <ul class="dropdown-menu">
-        <li><a href="#">Office Space</a></li>
-        <li><a href="#">Bungalow</a></li>
-        <li><a href="#">Housing</a></li>
-      </ul>
-    </li>
-    <li class="dropdown">
-      <a href="#" class="nav-link dropdown-toggle">Logistics <i class='bx bxs-chevron-down'></i></a>
-      <ul class="dropdown-menu">
-        <li><a href="#">Hiring Equipment</a></li>
-        <li><a href="#">Building Materials</a></li>
-      </ul>
-    </li>
-    <li class="dropdown"><a href="#" class="nav-link dropdown-toggle">Blogs <i class='bx bxs-chevron-down'></i></a>
-    <ul class="dropdown-menu">
-      <li><a href="#">News Feed</a></li>
-        <li><a href="#">Price Updates</a></li>
-    </ul>
-    </li>
-    <li><a href="#contact" class="nav-link">Contact</a></li>
-    <!-- <a href="#" class="btn"><span>Admin Dashboard</span></a> -->
-  </ul>
     </nav>
     <!-- main | image slider -->
     <main>
@@ -675,7 +687,7 @@
     </section>
 
     <!-- Blog Section -->
-    <section class="blog">
+    <section class="blog" id="blog">
       <div class="blog-container">
         <h2 class="blog-heading">Real Estate Insights and News</h2>
         <div class="blog-grid">
@@ -759,57 +771,65 @@
             </div>
           </article> -->
         </div>
-        <button class="load-more">Load More</button>
+        <button class="load-more"><a href="news.html">Load More</a> </button>
       </div>
     </section>
 
     <!-- Contact Section -->
-  <section class="contact">
-  <div class="contact-container">
-    <h2 class="contact-heading">Get in Touch</h2>
-    <p class="contact-subheading">We'd love to hear from you!</p>
-    <div class="contact-grid">
-      <div class="contact-form">
-        <form id="contact-form">
-          <div class="form-group">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required />
+    <section class="contact" id="contact">
+      <div class="contact-container">
+        <h2 class="contact-heading">Get in Touch</h2>
+        <p class="contact-subheading">We'd love to hear from you!</p>
+        <div class="contact-grid">
+          <div class="contact-form">
+            <form id="contact-form">
+              <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required />
+              </div>
+              <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required />
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" />
+              </div>
+              <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+              </div>
+              <button type="submit" class="submit-btn">Send Message</button>
+            </form>
           </div>
-          <div class="form-group">
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required />
-          </div>
-          <div class="form-group">
-            <label for="phone">Phone:</label>
-            <input type="tel" id="phone" name="phone" />
-          </div>
-          <div class="form-group">
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" required></textarea>
-          </div>
-          <button type="submit" class="submit-btn">Send Message</button>
-        </form>
-      </div>
-      <div class="contact-info">
-        <h3 class="contact-info-heading">Contact Information</h3>
-        <div class="contact-info-item">
-          <i class="fas fa-map-marker-alt"></i>
-          <p class="contact-info-address">123 Kwabenya St, Accra, Ghana</p>
-        </div>
-        <div class="contact-info-item">
-          <i class="fas fa-phone"></i>
-          <p class="contact-info-phone">+233 123 456 789</p>
-        </div>
-        <div class="contact-info-item">
-          <i class="fas fa-envelope"></i>
-          <p class="contact-info-email">domusgh@yahoo.com</p>
-        </div>
+          <div class="contact-info">
+            <h3 class="contact-info-heading">Contact Information</h3>
+            <div class="contact-info-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <p class="contact-info-address">123 Kwabenya St, Accra, Ghana</p>
+            </div>
+            <div class="contact-info-item">
+              <i class="fas fa-phone"></i>
+              <p class="contact-info-phone">+233 123 456 789</p>
+            </div>
+            <div class="contact-info-item">
+              <i class="fas fa-envelope"></i>
+              <p class="contact-info-email">domusgh@yahoo.com</p>
+            </div>
 
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31761.433390730137!2d-0.2710135646303809!3d5.687228539762453!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdf9e5ae5ea1e87%3A0x4b87d6d59a88aaed!2sKwabenya!5e0!3m2!1sen!2sgh!4v1727439506341!5m2!1sen!2sgh" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31761.433390730137!2d-0.2710135646303809!3d5.687228539762453!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdf9e5ae5ea1e87%3A0x4b87d6d59a88aaed!2sKwabenya!5e0!3m2!1sen!2sgh!4v1727439506341!5m2!1sen!2sgh"
+              width="400"
+              height="300"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-</section>
+    </section>
 
     <!-- Footer Section -->
     <footer class="footer">

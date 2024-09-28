@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <script src="script.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+     <!-- Navigation Bar -->
+    <nav id="nav" class="nav-bar">
+      <div class="nav-logo">
+        <img src="logo.png" alt="Logo" width="85" height="70" />
+      </div>
+
+      <div class="nav-toggle">
+        <i class="fas fa-bars" id="open-nav"></i>
+        <i class="fas fa-times" id="close-nav"></i>
+      </div>
+      <ul id="nav-links" class="nav-links">
+        <li><a href="#hero" class="nav-link">Home</a></li>
+        <li><a href="#about" class="nav-link">About Us</a></li>
+        <li class="dropdown">
+          <a href="#" class="nav-link dropdown-toggle"
+            >Real Estate <i class="bx bxs-chevron-down"></i
+          ></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Completed Projects</a></li>
+            <li><a href="#">Ongoing Projects</a></li>
+            <li><a href="#">Land</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="nav-link dropdown-toggle"
+            >Accommodation <i class="bx bxs-chevron-down"></i
+          ></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Office Space</a></li>
+            <li><a href="#">Bungalow</a></li>
+            <li><a href="#">Housing</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="nav-link dropdown-toggle"
+            >Logistics <i class="bx bxs-chevron-down"></i
+          ></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Hiring Equipment</a></li>
+            <li><a href="#">Building Materials</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#blog" class="nav-link dropdown-toggle"
+            >Blogs <i class="bx bxs-chevron-down"></i
+          ></a>
+          <ul class="dropdown-menu">
+            <li><a href="#blog">News Feed</a></li>
+            <li><a href="#">Price Updates</a></li>
+          </ul>
+        </li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+        <!-- <a href="#" class="btn"><span>Admin Dashboard</span></a> -->
+      </ul>
+    </nav>
+
+    <section class="blog" id="blog">
+      <div class="blog-container">
+        <h2 class="blog-heading">Real Estate Insights and News</h2>
+        <div class="blog-grid">
+          <!-- Blog Post 1 -->
+          <article class="blog-post">
+            <div class="blog-image">
+              <img
+                src="https://i.postimg.cc/4dYBF86b/premium-photo-1676625176020-3bbb1c0adea1-mark-https-images-unsplash-com-opengraph-logo-png-mark-w.jpg"
+                alt="Blog Image"
+              />
+            </div>
+            <div class="blog-content">
+              <h3 class="blog-title">
+                The Benefits of Investing in Real Estate
+              </h3>
+              <p class="blog-excerpt">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit
+                amet nulla auctor, vestibulum magna sed, convallis ex.
+              </p>
+            </div>
+          </article>
+
+          <!-- Blog Post 2 -->
+          <article class="blog-post">
+            <div class="blog-image">
+              <img
+                src="https://i.postimg.cc/Yq68VLWV/photo-1494145904049-0dca59b4bbad-mark-https-images-unsplash-com-opengraph-logo-png-mark-w-64-mark.jpg"
+                alt="Blog Image"
+              />
+            </div>
+            <div class="blog-content">
+              <h3 class="blog-title">
+                The Top 5 Neighborhoods to Live in Ghana
+              </h3>
+              <p class="blog-excerpt">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit
+                amet nulla auctor, vestibulum magna sed, convallis ex.
+              </p>
+            </div>
+          </article>
+
+          <!-- Blog Post 3 -->
+          <article class="blog-post">
+            <div class="blog-image">
+              <img
+                src="https://i.postimg.cc/KzTtMC7V/photo-1702905394338-4af58b6dbf61-mark-https-images-unsplash-com-opengraph-logo-png-mark-w-64-mark.jpg"
+                alt="Blog Image"
+              />
+            </div>
+            <div class="blog-content">
+              <h3 class="blog-title">
+                The Pros and Cons of Renting vs Buying a Home
+              </h3>
+              <p class="blog-excerpt">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit
+                amet nulla auctor, vestibulum magna sed, convallis ex.
+              </p>
+            </div>
+          </article>
+
+          <!-- Blog Post 4 -->
+           <article class="blog-post">
+            <div class="blog-image">
+              <img
+                src="https://i.postimg.cc/k5BQn227/photo-1702742711296-98086d25f8d0-mark-https-images-unsplash-com-opengraph-logo-png-mark-w-64-mark.jpg"
+                alt="Blog Image"
+              />
+            </div>
+            <div class="blog-content">
+              <h3 class="blog-title">
+                The Impact of Technology on the Real Estate Industry
+              </h3>
+              <p class="blog-excerpt">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit
+                amet nulla auctor, vestibulum magna sed, convallis ex.
+              </p>
+            </div>
+          </article>
+          <!-- Blog Post 4 -->
+           <article class="blog-post">
+            <div class="blog-image">
+              <img
+                src="https://i.postimg.cc/k5BQn227/photo-1702742711296-98086d25f8d0-mark-https-images-unsplash-com-opengraph-logo-png-mark-w-64-mark.jpg"
+                alt="Blog Image"
+              />
+            </div>
+            <div class="blog-content">
+              <h3 class="blog-title">
+                The Impact of Technology on the Real Estate Industry
+              </h3>
+              <p class="blog-excerpt">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit
+                amet nulla auctor, vestibulum magna sed, convallis ex.
+              </p>
+            </div>
+          </article>
+          <!-- Blog Post 4 -->
+           <article class="blog-post">
+            <div class="blog-image">
+              <img
+                src="https://i.postimg.cc/k5BQn227/photo-1702742711296-98086d25f8d0-mark-https-images-unsplash-com-opengraph-logo-png-mark-w-64-mark.jpg"
+                alt="Blog Image"
+              />
+            </div>
+            <div class="blog-content">
+              <h3 class="blog-title">
+                The Impact of Technology on the Real Estate Industry
+              </h3>
+              <p class="blog-excerpt">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit
+                amet nulla auctor, vestibulum magna sed, convallis ex.
+              </p>
+            </div>
+          </article>
+          <!-- Blog Post 4 -->
+           <article class="blog-post">
+            <div class="blog-image">
+              <img
+                src="https://i.postimg.cc/k5BQn227/photo-1702742711296-98086d25f8d0-mark-https-images-unsplash-com-opengraph-logo-png-mark-w-64-mark.jpg"
+                alt="Blog Image"
+              />
+            </div>
+            <div class="blog-content">
+              <h3 class="blog-title">
+                The Impact of Technology on the Real Estate Industry
+              </h3>
+              <p class="blog-excerpt">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit
+                amet nulla auctor, vestibulum magna sed, convallis ex.
+              </p>
+            </div>
+          </article>
+          <!-- Blog Post 4 -->
+           <article class="blog-post">
+            <div class="blog-image">
+              <img
+                src="https://i.postimg.cc/k5BQn227/photo-1702742711296-98086d25f8d0-mark-https-images-unsplash-com-opengraph-logo-png-mark-w-64-mark.jpg"
+                alt="Blog Image"
+              />
+            </div>
+            <div class="blog-content">
+              <h3 class="blog-title">
+                The Impact of Technology on the Real Estate Industry
+              </h3>
+              <p class="blog-excerpt">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit
+                amet nulla auctor, vestibulum magna sed, convallis ex.
+              </p>
+            </div>
+          </article>
+          <!-- Blog Post 4 -->
+           <article class="blog-post">
+            <div class="blog-image">
+              <img
+                src="https://i.postimg.cc/k5BQn227/photo-1702742711296-98086d25f8d0-mark-https-images-unsplash-com-opengraph-logo-png-mark-w-64-mark.jpg"
+                alt="Blog Image"
+              />
+            </div>
+            <div class="blog-content">
+              <h3 class="blog-title">
+                The Impact of Technology on the Real Estate Industry
+              </h3>
+              <p class="blog-excerpt">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit
+                amet nulla auctor, vestibulum magna sed, convallis ex.
+              </p>
+            </div>
+          </article> 
+        </div>
+      </div>
+    </section>
+</body>
+</html>
