@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-white);
+}
+
+html,
+body {
+  overflow-x: hidden;
+  width: 100%;
+}
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "poppins", sans-serif;
+}
+
+:root {
+  --primary-color: hsl(204, 90%, 23%);
+  --secondary-color: hsl(277, 27%, 58%);
+  --color-white: hsl(0, 0%, 100%);
+  --color-grey: hsl(0, 3%, 72%);
+  --bg-color: hsl(210, 86%, 33%);
+  --bg-color-1: hsl(279, 82%, 57%);
+}
+
+.about--home {
+  background: url("https://i.postimg.cc/y6hnQ00v/625b10a58137b364b18df2ea-i-Stock-94179607.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-top: 70px;
+  width: 100vw;
+  height: 95vh;
+  background-attachment: fixed;
+  z-index: -1;
+}
+
+.about--home--title {
+  color: var(--color-white);
+  height: 100vh;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  text-transform: capitalize;
+  font-size: 4.5rem;
+}
+
+
+.passage {
+  padding: 20px;
+  margin-inline: 80px;
+  margin-bottom: 300px;
+  background-color: #f7f7f7;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.155);
+}
+
+.passage p {
+  margin-bottom: 20px;
+  font-family: 'poppins', serif;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.passage h3 {
+  font-family: 'poppins', sans-serif;
+  font-size: 22px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.passage h3 + p {
+  margin-top: 0;
+}
+
+
+
+/* Footer */
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: hsla(277, 27%, 58%, 0.6);
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 4px 8px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-left,
+.footer-right {
+  flex: 1;
+}
+
+.footer-left {
+  text-align: left;
+}
+
+.footer-right {
+  text-align: right;
+}
+
+.footer p {
+  margin-bottom: 0;
+}
