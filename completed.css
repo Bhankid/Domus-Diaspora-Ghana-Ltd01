@@ -23,11 +23,56 @@
   display: flex;
   justify-content: space-between;
   gap: 20px;
+<<<<<<< HEAD
+=======
+  background-color: hsla(0, 15%, 95%, 0.817);
+>>>>>>> f5ba2d94302f8bd3d0cfa0a16eee017b552943af
 }
 
 .project-gallery-item {
   position: relative;
   width: calc(33.33% - 20px);
+<<<<<<< HEAD
+=======
+  transition: all 1s ease-in-out;
+}
+
+/* Add animation and transition to .project-gallery-item */
+
+.project-gallery-item {
+  animation: wavyAnimation 1s ease-in-out;
+  animation-fill-mode: backwards;
+}
+
+@keyframes wavyAnimation {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Add a delay to each item to create a wavy effect */
+
+.project-gallery-item:nth-child(1) {
+  animation-delay: 0.2s;
+}
+
+.project-gallery-item:nth-child(2) {
+  animation-delay: 0.4s;
+}
+
+.project-gallery-item:nth-child(3) {
+  animation-delay: 0.6s;
+}
+
+.project-gallery-item:hover {
+  transform: scale(1.05); 
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+>>>>>>> f5ba2d94302f8bd3d0cfa0a16eee017b552943af
 }
 
 .project-gallery-item img {
@@ -35,6 +80,14 @@
   height: 400px;
   object-fit: cover;
   border-radius: 8px;
+<<<<<<< HEAD
+=======
+  transition: all 1s ease-in-out;
+}
+
+.project-gallery-item:hover img {
+  transform: scale(1.1); 
+>>>>>>> f5ba2d94302f8bd3d0cfa0a16eee017b552943af
 }
 
 .project-info {
@@ -101,4 +154,76 @@
 
 .social-icons li i:hover {
   color: var(--secondary-color);
+<<<<<<< HEAD
+=======
+}
+
+
+/* Medium screens (laptops) */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .project-gallery-item {
+    width: calc(33.33% - 20px);
+  }
+  .project-gallery-item img {
+    height: 400px;
+  }
+}
+
+/* Small screens (tablets) */
+@media (min-width: 768px) and (max-width: 991px) {
+  .project-gallery {
+    flex-wrap: wrap;
+  }
+  .project-gallery-item {
+    width: calc(50% - 20px);
+    margin-bottom: 20px;
+  }
+  .project-gallery-item img {
+    height: 300px;
+  }
+}
+
+/* Extra small screens (mobiles) */
+@media (max-width: 767px) {
+  .project-gallery {
+    flex-wrap: wrap;
+  }
+  .project-gallery-item {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .project-gallery-item img {
+    height: 200px;
+  }
+  .project-info {
+    position: relative;
+    bottom: auto;
+    left: auto;
+    width: 100%;
+    padding: 16px;
+  }
+  .project-info-left {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  margin-right: auto; /* add this to push it to the left */
+}
+  .project-name {
+    font-size: 14px;
+  }
+  .project-location {
+    font-size: 12px;
+  }
+  .social-icons {
+    justify-content: center;
+    font-size: 8px;
+  }
+  .social-icons li {
+  margin-right: 10px;
+}
+
+.social-icons li i {
+  font-size: 12px;
+}
+>>>>>>> f5ba2d94302f8bd3d0cfa0a16eee017b552943af
 }
