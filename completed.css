@@ -23,17 +23,12 @@
   display: flex;
   justify-content: space-between;
   gap: 20px;
-<<<<<<< HEAD
-=======
   background-color: hsla(0, 15%, 95%, 0.817);
->>>>>>> f5ba2d94302f8bd3d0cfa0a16eee017b552943af
 }
 
 .project-gallery-item {
   position: relative;
   width: calc(33.33% - 20px);
-<<<<<<< HEAD
-=======
   transition: all 1s ease-in-out;
 }
 
@@ -72,7 +67,6 @@
 .project-gallery-item:hover {
   transform: scale(1.05); 
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
->>>>>>> f5ba2d94302f8bd3d0cfa0a16eee017b552943af
 }
 
 .project-gallery-item img {
@@ -80,14 +74,11 @@
   height: 400px;
   object-fit: cover;
   border-radius: 8px;
-<<<<<<< HEAD
-=======
   transition: all 1s ease-in-out;
 }
 
 .project-gallery-item:hover img {
   transform: scale(1.1); 
->>>>>>> f5ba2d94302f8bd3d0cfa0a16eee017b552943af
 }
 
 .project-info {
@@ -154,8 +145,6 @@
 
 .social-icons li i:hover {
   color: var(--secondary-color);
-<<<<<<< HEAD
-=======
 }
 
 
@@ -206,7 +195,7 @@
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  margin-right: auto; /* add this to push it to the left */
+  margin-right: auto; 
 }
   .project-name {
     font-size: 14px;
@@ -225,5 +214,4 @@
 .social-icons li i {
   font-size: 12px;
 }
->>>>>>> f5ba2d94302f8bd3d0cfa0a16eee017b552943af
 }
