@@ -28,6 +28,59 @@ document.addEventListener("click", function (event) {
   }
 });
 
+// main slider
+
+const slider = document.querySelector(".slider");
+
+let autoplayTimeout;
+let autoplayRunning = false;
+
+function activate(e) {
+  const items = document.querySelectorAll(".item");
+  const slider = document.querySelector(".slider");
+
+  if (e.target.matches(".next")) {
+    const currentItem = slider.querySelector(".item:first-child");
+    slider.append(currentItem);
+  } else if (e.target.matches(".prev")) {
+    const currentItem = slider.querySelector(".item:last-child");
+    slider.prepend(currentItem);
+  }
+}
+
+function autoplay() {
+  if (autoplayRunning) return;
+  autoplayRunning = true;
+
+  const items = document.querySelectorAll(".item");
+  const slider = document.querySelector(".slider");
+
+  const currentItem = slider.querySelector(".item:first-child");
+  slider.append(currentItem);
+
+  autoplayTimeout = setTimeout(() => {
+    autoplayRunning = false;
+    autoplay();
+  }, 5000); 
+}
+
+autoplay();
+
+// clear interval on hover
+// document.querySelector(".slider").addEventListener("mouseover", () => {
+//   clearTimeout(autoplayTimeout);
+//   autoplayRunning = false;
+// });
+
+// restart interval on mouseleave
+// document.querySelector(".slider").addEventListener("mouseleave", (e) => {
+//   if (!e.relatedTarget || !document.querySelector(".slider").contains(e.relatedTarget)) {
+//     autoplay();
+//   }
+// });
+document.addEventListener("click", activate, false);
+
+
 // Card swiper
 const stack = document.querySelector(".stack");
 const cards = Array.from(stack.children)
@@ -61,6 +114,7 @@ stack.addEventListener("click", function (e) {
     }, 1200);
   }
 });
+
 
 
 // Swiper
