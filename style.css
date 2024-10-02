@@ -302,6 +302,11 @@ body {
     font-size: 1rem;
   }
 
+   .slider-btn a {
+   color: var(--color-white);
+    font-size: 1rem;
+  }
+
   .content-1 .description {
     font-size: 0.7rem;
   }
@@ -345,7 +350,7 @@ body {
 
   .slider-btn a {
    color: var(--color-white);
-    font-size: 1.1rem;
+    font-size: .8rem;
   }
   .content .title {
     font-size: 0.9rem;
@@ -356,7 +361,7 @@ body {
   }
 
   .content-1 button {
-    font-size: 0.7rem;
+    font-size: 0.6rem;
   }
 
   .item {
@@ -743,12 +748,9 @@ main {
 }
 
 .hero-cards {
-  background: -webkit-linear-gradient(
-    0deg,
-    rgb(244, 243, 246),
-    hsl(0, 0%, 67%)
-  );
+  background-color: hsl(260, 13%, 95%);
 }
+
 .hero-card .card-content {
   display: flex;
   align-items: center;
@@ -758,6 +760,8 @@ main {
   padding: 0;
   color: hsl(0, 0%, 2%);
   background-color: rgba(255, 255, 255, 0.881);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1), 0 4px 8px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
 }
 
 .hero-card .image-container {
@@ -789,7 +793,7 @@ main {
 }
 
 .hero-card .text-container h2 {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   font-weight: 800;
   margin-bottom: 10px;
   color: hsl(0, 0%, 2%);
@@ -798,10 +802,12 @@ main {
 }
 
 .hero-card .text-container p {
-  font-size: 1.3rem;
+  font-size: 1.5rem;
+  font-weight: 600;
     color: hsl(0, 0%, 2%);
   margin-bottom: 20px;
-  text-align: center;
+  text-align: left;
+  line-height: 2;
 }
 
 .hero-card .text-container .tab-button {
@@ -905,7 +911,7 @@ main {
 
 /* Project Gallery */
 .project-gallery {
-  background-color:  hsla(210, 86%, 33%, 0.648);
+  background-color:  hsl(260, 13%, 95%);
   padding-block: 20px;
   padding-inline: 20px;
 }
@@ -1008,7 +1014,7 @@ main {
 /* Testimonials */
 .testimonials {
   padding: 20px;
-  background-color: var(--color-grey);
+  background-color:hsl(260, 13%, 95%);
 }
 
 .testimonials .title {
@@ -1177,7 +1183,7 @@ blog {
 /* Contact Section */
 .contact {
   padding: 100px 0;
-  background-color: var(--color-grey);
+  background-color: hsl(260, 13%, 95%);
 }
 
 .contact-container {
@@ -1525,6 +1531,28 @@ blog {
     cursor: pointer;
     color: var(--color-white);
     margin-right: 20px;
+  }
+
+  .dropdown-menu {
+    display: none;
+    position: relative;
+    background-color: hsla(228, 84%, 40%, 0.676);
+    padding: 10px;
+    width: 50%;
+  }
+
+  .dropdown-menu.show {
+    display: block;
+  }
+
+  .dropdown-menu li {
+    width: 100%;
+  }
+
+  .dropdown-menu a {
+    width: 100%;
+    display: block;
+    padding: 10px;
   }
 }
 
@@ -1881,3 +1909,4 @@ blog {
     transform: translate(-50%, -50);
   }
 }
+

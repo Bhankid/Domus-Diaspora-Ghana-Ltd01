@@ -1,315 +1,269 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link
-      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
-    <script src="script.js" defer></script>
-    <title>Domus Diaspora Ghana Ltd | Real Estate Website</title>
-  </head>
-  <body>
-    <!-- Navigation Bar -->
-    <nav id="nav" class="nav-bar">
-      <div class="nav-logo">
-        <img src="logo.png" alt="Logo" width="85" height="70" />
-      </div>
 
-      <div class="nav-toggle">
-        <i class="fas fa-bars" id="open-nav"></i>
-        <i class="fas fa-times" id="close-nav"></i>
-      </div>
-      <ul id="nav-links" class="nav-links">
-        <li><a href="index.html" class="nav-link">Home</a></li>
-        <li><a href="about.html" class="nav-link">About Us</a></li>
-        <li class="dropdown">
-          <a href="#" class="nav-link dropdown-toggle"
-            >Real Estate <i class="bx bxs-chevron-down"></i
-          ></a>
-          <ul class="dropdown-menu">
-            <li><a href="completed.html">Completed Projects</a></li>
-            <li><a href="ongoing.html">Current Projects</a></li>
-            <li><a href="land.html">Buy A Land</a></li>
-          </ul>
-        </li>
-        <li class="dropdown">
-          <a href="#" class="nav-link dropdown-toggle"
-            >Accommodation <i class="bx bxs-chevron-down"></i
-          ></a>
-          <ul class="dropdown-menu">
-            <li><a href="office.html">Office Space</a></li>
-            <li><a href="Bungalow.html">Bungalow</a></li>
-            <li><a href="house.html">Housing</a></li>
-          </ul>
-        </li>
-        <li class="dropdown">
-          <a href="#" class="nav-link dropdown-toggle"
-            >Logistics <i class="bx bxs-chevron-down"></i
-          ></a>
-          <ul class="dropdown-menu">
-            <li><a href="equipment.html">Hiring Equipment</a></li>
-            <li><a href="materials.html">Building Materials</a></li>
-          </ul>
-        </li>
-        <li class="dropdown">
-          <a href="#" class="nav-link dropdown-toggle"
-            >Blogs <i class="bx bxs-chevron-down"></i
-          ></a>
-          <ul class="dropdown-menu">
-            <li><a href="news.html">News Feed</a></li>
-            <li><a href="#">Price Updates</a></li>
-          </ul>
-        </li>
-        <li><a href="#contact" class="nav-link">Contact</a></li>
-        <!-- <a href="#" class="btn"><span>Admin Dashboard</span></a> -->
-      </ul>
-    </nav>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
-    <main class="main">
-      <ul class='slider'>
-        <li class='item' style="background-image: url('https://i.postimg.cc/FFPP7t3D/photo-1605146769289-440113cc3d00-mark-https-images-unsplash-com-opengraph-logo-png-mark-w-64-mark.jpg')">
-          <div class='content-1'>
-            <h2 class='title'>"Real Estate"</h2>
-            <p class='description'> Luxury homes with panoramic views of the river, private balconies, and a tranquil atmosphere, perfect for relaxation. </p>
-            <button class="slider-btn">
-              <a href="#contact">Contact Us</a>
-            </button>
-          </div>
-        </li>
-        <li class='item' style="background-image: url('https://i.postimg.cc/htC8PrSM/pexels-pixabay-46160.jpg')">
-          <div class='content-1'>
-            <h2 class='title'>"Buy A Land"</h2>
-            <p class='description'> Family-friendly homes in a natural, wooded setting with a creek running through the community, perfect for outdoor
+  <!-- GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.all.min.js"
+    integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+    integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+    integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script src="script.js" defer></script>
+  <title>Domus Diaspora Ghana Ltd | Real Estate Website</title>
+</head>
+
+<body>
+  <!-- Navigation Bar -->
+  <nav id="nav" class="nav-bar">
+    <div class="nav-logo">
+      <img src="logo.png" alt="Logo" width="85" height="70" />
+    </div>
+
+    <div class="nav-toggle">
+      <i class="fas fa-bars" id="open-nav"></i>
+      <i class="fas fa-times" id="close-nav"></i>
+    </div>
+    <ul id="nav-links" class="nav-links">
+      <li><a href="index.html" class="nav-link">Home</a></li>
+      <li><a href="about.html" class="nav-link">About Us</a></li>
+      <li class="dropdown">
+        <a href="#" class="nav-link dropdown-toggle">Real Estate <i class="bx bxs-chevron-down"></i></a>
+        <ul class="dropdown-menu">
+          <li><a href="completed.html">Completed Projects</a></li>
+          <li><a href="ongoing.html">Current Projects</a></li>
+          <li><a href="land.html">Buy A Land</a></li>
+        </ul>
+      </li>
+      <li class="dropdown">
+        <a href="#" class="nav-link dropdown-toggle">Accommodation <i class="bx bxs-chevron-down"></i></a>
+        <ul class="dropdown-menu">
+          <li><a href="office.html">Office Space</a></li>
+          <li><a href="Bungalow.html">Bungalow</a></li>
+          <li><a href="house.html">Housing</a></li>
+        </ul>
+      </li>
+      <li class="dropdown">
+        <a href="#" class="nav-link dropdown-toggle">Logistics <i class="bx bxs-chevron-down"></i></a>
+        <ul class="dropdown-menu">
+          <li><a href="equipment.html">Hiring Equipment</a></li>
+          <li><a href="materials.html">Building Materials</a></li>
+        </ul>
+      </li>
+      <li class="dropdown">
+        <a href="#" class="nav-link dropdown-toggle">Blogs <i class="bx bxs-chevron-down"></i></a>
+        <ul class="dropdown-menu">
+          <li><a href="news.html">News Feed</a></li>
+          <li><a href="#">Price Updates</a></li>
+        </ul>
+      </li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+      <!-- <a href="#" class="btn"><span>Admin Dashboard</span></a> -->
+    </ul>
+  </nav>
+
+  <main class="main">
+    <ul class='slider'>
+      <li class='item'
+        style="background-image: url('https://i.postimg.cc/FFPP7t3D/photo-1605146769289-440113cc3d00-mark-https-images-unsplash-com-opengraph-logo-png-mark-w-64-mark.jpg')">
+        <div class='content-1'>
+          <h2 class='title'>"Real Estate"</h2>
+          <p class='description'> Luxury homes with panoramic views of the river, private balconies, and a tranquil
+            atmosphere, perfect for relaxation. </p>
+          <button class="slider-btn">
+            <a href="#contact">Contact Us</a>
+          </button>
+        </div>
+      </li>
+      <li class='item' style="background-image: url('https://i.postimg.cc/htC8PrSM/pexels-pixabay-46160.jpg')">
+        <div class='content-1'>
+          <h2 class='title'>"Buy A Land"</h2>
+          <p class='description'> Family-friendly homes in a natural, wooded setting with a creek running through the
+            community, perfect for outdoor
             enthusiasts. </p>
-            <button class="slider-btn">
-              <a href="#contact">Contact Us</a>
-              </button>
-          </div>
-        </li>
-        <li class='item' style="background-image: url('https://i.postimg.cc/mgR437zW/est-1.webp')">
-          <div class='content-1'>
-            <h2 class='title'>"Accommodation"</h2>
-            <p class='description'> Luxury homes in a serene, natural setting with plenty of green spaces and walking trails. </p>
-            <button class="slider-btn">
-              <a href="#contact">Contact Us</a>
-            </button>
-          </div>
-        </li>
-        <li class='item' style="background-image: url('https://i.postimg.cc/KjBZkkTQ/lgst3.jpg')">
-          <div class='content-1'>
-            <h2 class='title'>"Logistics"</h2>
-            <p class='description'>
-              Trendy, industrial-chic lofts in the heart of the city, with exposed brick, high ceilings, and urban views.
-            </p>
-            <button class="slider-btn">
-              <a href="#contact">Contact Us</a>
-            </button>
-          </div>
-        </li>
-        <li class='item'
-          style="background-image: url('https://i.postimg.cc/DfjqPJSL/bngl-5.jpg')">
-          <div class='content-1'>
-            <h2 class='title-1'>"Completed Projects"</h2>
-            <p class='description'>
-              Charming, Mediterranean-style villas with private courtyards and a tranquil atmosphere, perfect for families.
-            </p>
-            <button class="slider-btn">
-              <a href="#contact">Contact Us</a>
-            </button>
-          </div>
-        </li>
-        <li class='item' style="background-image: url('https://i.postimg.cc/mDQSYp14/pexels-divinetechygirl-1181406.jpg')">
-          <div class='content-1'>
-            <h2 class='title'>"Bungalow"</h2>
-            <p class='description'> Upscale apartments with modern amenities, located in a vibrant neighborhood with plenty of parks and green spaces. </p>
-            <button class="slider-btn">
-              <a href="#contact">Contact Us</a>
-            </button>
-          </div>
-        </li>
-      </ul>
-      <nav class='nav'>
-        <ion-icon class='btn--1 prev' name="arrow-back-outline"></ion-icon>
-        <ion-icon class='btn--1 next' name="arrow-forward-outline"></ion-icon>
-      </nav>
-    </main>
-    
-    <!-- main | image slider -->
-    <main>
-      <div class="content">
-        <h1>Welcome to Domus Ghana Limited</h1>
-        <p>
-          Welcome to your dream home! Discover the perfect blend of comfort and
-          luxury in this stunning property, featuring a spacious living room
-          with ample natural light, a modern kitchen equipped with
-          state-of-the-art appliances, and a serene master suite with a private
-          en-suite bathroom and walk-in closet. Enjoy outdoor living in your
-          private backyard retreat, ideal for summer barbecues or simply soaking
-          up the sun. Located in a vibrant neighborhood with easy access to
-          shopping, dining, and parks, this immaculate property is move-in
-          ready! Don't miss the chance to make it yours—schedule a viewing
-          today! For more information, contact our real estate team; we're here
-          to help you find your perfect home!
-        </p>
-        <button class="btn">Explore More</button>
-      </div>
-    
-      <div class="stack">
-        <div class="card">
-          <img
-            src="https://i.postimg.cc/xTnN2nMM/wlcm.jpg"
-            alt="" />
+          <button class="slider-btn">
+            <a href="#contact">Contact Us</a>
+          </button>
         </div>
-        <div class="card">
-          <img
-            src="https://i.postimg.cc/wT2yxZQP/wlcm-1.webp"
-            alt="" />
+      </li>
+      <li class='item' style="background-image: url('https://i.postimg.cc/mgR437zW/est-1.webp')">
+        <div class='content-1'>
+          <h2 class='title'>"Accommodation"</h2>
+          <p class='description'> Luxury homes in a serene, natural setting with plenty of green spaces and walking
+            trails. </p>
+          <button class="slider-btn">
+            <a href="#contact">Contact Us</a>
+          </button>
         </div>
-        <div class="card">
-          <img
-            src="https://i.postimg.cc/52tHXgPt/wlcm-2.webp"
-            alt="" />
+      </li>
+      <li class='item' style="background-image: url('https://i.postimg.cc/KjBZkkTQ/lgst3.jpg')">
+        <div class='content-1'>
+          <h2 class='title'>"Logistics"</h2>
+          <p class='description'>
+            Trendy, industrial-chic lofts in the heart of the city, with exposed brick, high ceilings, and urban views.
+          </p>
+          <button class="slider-btn">
+            <a href="#contact">Contact Us</a>
+          </button>
         </div>
-        <div class="card">
-          <img
-            src="https://i.postimg.cc/52j0400Y/wlcm4.webp"
-            alt="" />
+      </li>
+      <li class='item' style="background-image: url('https://i.postimg.cc/DfjqPJSL/bngl-5.jpg')">
+        <div class='content-1'>
+          <h2 class='title-1'>"Completed Projects"</h2>
+          <p class='description'>
+            Charming, Mediterranean-style villas with private courtyards and a tranquil atmosphere, perfect for
+            families.
+          </p>
+          <button class="slider-btn">
+            <a href="#contact">Contact Us</a>
+          </button>
         </div>
-        <div class="card">
-          <img
-            src="https://i.postimg.cc/FKLHSB0h/wlcm5.webp"
-            alt="" />
+      </li>
+      <li class='item'
+        style="background-image: url('https://i.postimg.cc/mDQSYp14/pexels-divinetechygirl-1181406.jpg')">
+        <div class='content-1'>
+          <h2 class='title'>"Bungalow"</h2>
+          <p class='description'> Upscale apartments with modern amenities, located in a vibrant neighborhood with
+            plenty of parks and green spaces. </p>
+          <button class="slider-btn">
+            <a href="#contact">Contact Us</a>
+          </button>
         </div>
-        <div class="card">
-          <img
-            src="https://i.postimg.cc/gJGb0SDS/wlcm6.webp"
-            alt="" />
-        </div>
-        <div class="card">
-          <img
-            src="https://i.postimg.cc/d3MH1Lwq/wlcm7.webp"
-            alt="" />
-        </div>
-        <div class="card">
-          <img
-            src="https://i.postimg.cc/xTnN2nMM/wlcm.jpg"
-            alt="" />
-        </div>
-      </div>
-    </main>
+      </li>
+    </ul>
+    <nav class='nav'>
+      <ion-icon class='btn--1 prev' name="arrow-back-outline"></ion-icon>
+      <ion-icon class='btn--1 next' name="arrow-forward-outline"></ion-icon>
+    </nav>
+  </main>
 
-    <!-- Our Partners Section -->
-    <h2 class="partner-heading">Our Partners</h2>
-    <section class="partners">
-      <div class="partners-container">
-        <div class="partner-slide">
-          <div class="partner-icon">
-            <img
-              src="https://i.postimg.cc/QMc2BpDb/prtn.jpg"
-              alt="partner-icon"
-            />
-          </div>
-        </div>
-        <div class="partner-slide">
-          <div class="partner-icon">
-            <img
-              src="https://i.postimg.cc/j5sFLmZx/prtnr.png"
-              alt="partner-icon"
-            />
-          </div>
-        </div>
-        <div class="partner-slide">
-          <div class="partner-icon">
-            <img
-              src="https://i.postimg.cc/kMYpgj8C/ptna.jpg"
-              alt="partner-icon"
-            />
-          </div>
-        </div>
-        <div class="partner-slide">
-          <div class="partner-icon">
-            <img
-              src="https://i.postimg.cc/QMc2BpDb/prtn.jpg"
-              alt="partner-icon"
-            />
-          </div>
-        </div>
-        <div class="partner-slide">
-          <div class="partner-icon">
-            <img
-              src="https://i.postimg.cc/j5sFLmZx/prtnr.png"
-              alt="partner-icon"
-            />
-          </div>
-        </div>
-        <div class="partner-slide">
-          <div class="partner-icon">
-            <img
-              src="https://i.postimg.cc/QMc2BpDb/prtn.jpg"
-              alt="partner-icon"
-            />
-          </div>
-        </div>
-        <div class="partner-slide">
-          <div class="partner-icon">
-            <img
-              src="https://i.postimg.cc/QMc2BpDb/prtn.jpg"
-              alt="partner-icon"
-            />
-          </div>
-        </div>
-        <div class="partner-slide">
-          <div class="partner-icon">
-            <img
-              src="https://i.postimg.cc/kMYpgj8C/ptna.jpg"
-              alt="partner-icon"
-            />
-          </div>
-        </div>
-        <div class="partner-slide">
-          <div class="partner-icon">
-            <img
-              src="https://i.postimg.cc/QMc2BpDb/prtn.jpg"
-              alt="partner-icon"
-            />
-          </div>
-        </div>
-        <div class="partner-slide">
-          <div class="partner-icon">
-            <img
-              src="https://i.postimg.cc/QMc2BpDb/prtn.jpg"
-              alt="partner-icon"
-            />
-          </div>
-        </div>
-        <div class="partner-slide">
-          <div class="partner-icon">
-            <img
-              src="https://i.postimg.cc/QMc2BpDb/prtn.jpg"
-              alt="partner-icon"
-            />
-          </div>
+  <!-- main | image slider -->
+  <main>
+    <div class="content">
+      <h1>Welcome to Domus Ghana Limited</h1>
+      <p>
+        Welcome to your dream home! Discover the perfect blend of comfort and
+        luxury in this stunning property, featuring a spacious living room
+        with ample natural light, a modern kitchen equipped with
+        state-of-the-art appliances, and a serene master suite with a private
+        en-suite bathroom and walk-in closet. Enjoy outdoor living in your
+        private backyard retreat, ideal for summer barbecues or simply soaking
+        up the sun. Located in a vibrant neighborhood with easy access to
+        shopping, dining, and parks, this immaculate property is move-in
+        ready! Don't miss the chance to make it yours—schedule a viewing
+        today! For more information, contact our real estate team; we're here
+        to help you find your perfect home!
+      </p>
+      <button class="btn">Explore More</button>
+    </div>
+
+    <div class="stack">
+      <div class="card">
+        <img src="https://i.postimg.cc/xTnN2nMM/wlcm.jpg" alt="" />
+      </div>
+      <div class="card">
+        <img src="https://i.postimg.cc/wT2yxZQP/wlcm-1.webp" alt="" />
+      </div>
+      <div class="card">
+        <img src="https://i.postimg.cc/52tHXgPt/wlcm-2.webp" alt="" />
+      </div>
+      <div class="card">
+        <img src="https://i.postimg.cc/52j0400Y/wlcm4.webp" alt="" />
+      </div>
+      <div class="card">
+        <img src="https://i.postimg.cc/FKLHSB0h/wlcm5.webp" alt="" />
+      </div>
+      <div class="card">
+        <img src="https://i.postimg.cc/gJGb0SDS/wlcm6.webp" alt="" />
+      </div>
+      <div class="card">
+        <img src="https://i.postimg.cc/d3MH1Lwq/wlcm7.webp" alt="" />
+      </div>
+      <div class="card">
+        <img src="https://i.postimg.cc/xTnN2nMM/wlcm.jpg" alt="" />
+      </div>
+    </div>
+  </main>
+
+  <!-- Our Partners Section -->
+  <h2 class="partner-heading">Our Partners</h2>
+  <section class="partners">
+    <div class="partners-container">
+      <div class="partner-slide">
+        <div class="partner-icon">
+          <img src="https://i.postimg.cc/QMc2BpDb/prtn.jpg" alt="partner-icon" />
         </div>
       </div>
-    </section>
+      <div class="partner-slide">
+        <div class="partner-icon">
+          <img src="https://i.postimg.cc/j5sFLmZx/prtnr.png" alt="partner-icon" />
+        </div>
+      </div>
+      <div class="partner-slide">
+        <div class="partner-icon">
+          <img src="https://i.postimg.cc/kMYpgj8C/ptna.jpg" alt="partner-icon" />
+        </div>
+      </div>
+      <div class="partner-slide">
+        <div class="partner-icon">
+          <img src="https://i.postimg.cc/QMc2BpDb/prtn.jpg" alt="partner-icon" />
+        </div>
+      </div>
+      <div class="partner-slide">
+        <div class="partner-icon">
+          <img src="https://i.postimg.cc/j5sFLmZx/prtnr.png" alt="partner-icon" />
+        </div>
+      </div>
+      <div class="partner-slide">
+        <div class="partner-icon">
+          <img src="https://i.postimg.cc/QMc2BpDb/prtn.jpg" alt="partner-icon" />
+        </div>
+      </div>
+      <div class="partner-slide">
+        <div class="partner-icon">
+          <img src="https://i.postimg.cc/QMc2BpDb/prtn.jpg" alt="partner-icon" />
+        </div>
+      </div>
+      <div class="partner-slide">
+        <div class="partner-icon">
+          <img src="https://i.postimg.cc/kMYpgj8C/ptna.jpg" alt="partner-icon" />
+        </div>
+      </div>
+      <div class="partner-slide">
+        <div class="partner-icon">
+          <img src="https://i.postimg.cc/QMc2BpDb/prtn.jpg" alt="partner-icon" />
+        </div>
+      </div>
+      <div class="partner-slide">
+        <div class="partner-icon">
+          <img src="https://i.postimg.cc/QMc2BpDb/prtn.jpg" alt="partner-icon" />
+        </div>
+      </div>
+      <div class="partner-slide">
+        <div class="partner-icon">
+          <img src="https://i.postimg.cc/QMc2BpDb/prtn.jpg" alt="partner-icon" />
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <!-- Hero Section -->
-    <section class="hero">
-      <div class="hero-container">
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-container">
+      <div class="hero-cards-wrapper">
         <div class="hero-cards">
           <!-- Card 1: Real Estate -->
           <article class="hero-card" data-category="real-estate">
@@ -317,21 +271,21 @@
               <div class="image-container">
                 <img
                   src="https://i.postimg.cc/KzTtMC7V/photo-1702905394338-4af58b6dbf61-mark-https-images-unsplash-com-opengraph-logo-png-mark-w-64-mark.jpg"
-                  alt="Real Estate Image"
-                />
+                  alt="Real Estate Image" />
               </div>
               <div class="text-container">
                 <h2>Real Estate</h2>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                  sit amet nulla auctor, vestibulum magna sed, convallis ex.
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est aspernatur, cum tempora aliquid quis
+                  doloribus laboriosam, nobis error deserunt, dolore corrupti. Cumque fuga totam pariatur dolores et
+                  minus, dolorum perspiciatis sapiente ducimus nisi tempora accusamus ad at suscipit! Rerum quas beatae
+                  dicta praesentium corporis esse provident laudantium nostrum ut deserunt voluptatem dolorum eaque iure
+                  fugit, temporibus dolores. Ipsum nesciunt recusandae officia ea, est officiis accusamus. Quos, odit
+                  consectetur iste ullam voluptatum ipsum optio, mollitia a nostrum consequuntur placeat, obcaecati
+                  voluptates!
                 </p>
-                <button
-                  class="tab-button"
-                  aria-label="Real Estate Tab"
-                  data-tab="real-estate"
-                >
-                  View More
+                <button class="tab-button" aria-label="Real Estate Tab" data-tab="real-estate">
+                  <a href="completed.html">View More</a>
                 </button>
               </div>
             </div>
@@ -343,21 +297,26 @@
               <div class="image-container accomodate">
                 <img
                   src="https://i.postimg.cc/k5BQn227/photo-1702742711296-98086d25f8d0-mark-https-images-unsplash-com-opengraph-logo-png-mark-w-64-mark.jpg"
-                  alt="Accommodation Image"
-                />
+                  alt="Accommodation Image" />
               </div>
               <div class="text-container">
                 <h2>Accommodation</h2>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                  sit amet nulla auctor, vestibulum magna sed, convallis ex.
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est aspernatur, cum tempora aliquid quis
+                  doloribus laboriosam,
+                  nobis error deserunt, dolore corrupti. Cumque fuga totam pariatur dolores et minus, dolorum
+                  perspiciatis
+                  sapiente
+                  ducimus nisi tempora accusamus ad at suscipit! Rerum quas beatae dicta praesentium corporis esse
+                  provident laudantium
+                  nostrum ut deserunt voluptatem dolorum eaque iure fugit, temporibus dolores. Ipsum nesciunt recusandae
+                  officia ea, est
+                  officiis accusamus. Quos, odit consectetur iste ullam voluptatum ipsum optio, mollitia a nostrum
+                  consequuntur placeat,
+                  obcaecati voluptates!
                 </p>
-                <button
-                  class="tab-button"
-                  aria-label="Accommodation Tab"
-                  data-tab="accommodation"
-                >
-                  View More
+                <button class="tab-button" aria-label="Accommodation Tab" data-tab="accommodation">
+                  <a href="house.html">View More</a>
                 </button>
               </div>
             </div>
@@ -369,31 +328,37 @@
               <div class="image-container">
                 <img
                   src="https://i.postimg.cc/283NFmYH/photo-1492168732976-2676c584c675-mark-https-images-unsplash-com-opengraph-logo-png-mark-w-64-mark.jpg"
-                  alt="Logistics Image"
-                />
+                  alt="Logistics Image" />
               </div>
               <div class="text-container">
                 <h2>Logistics</h2>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                  sit amet nulla auctor, vestibulum magna sed, convallis ex.
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est aspernatur, cum tempora aliquid quis
+                  doloribus laboriosam,
+                  nobis error deserunt, dolore corrupti. Cumque fuga totam pariatur dolores et minus, dolorum
+                  perspiciatis
+                  sapiente
+                  ducimus nisi tempora accusamus ad at suscipit! Rerum quas beatae dicta praesentium corporis esse
+                  provident laudantium
+                  nostrum ut deserunt voluptatem dolorum eaque iure fugit, temporibus dolores. Ipsum nesciunt recusandae
+                  officia ea, est
+                  officiis accusamus. Quos, odit consectetur iste ullam voluptatum ipsum optio, mollitia a nostrum
+                  consequuntur placeat,
+                  obcaecati voluptates!
                 </p>
-                <button
-                  class="tab-button"
-                  aria-label="Logistics Tab"
-                  data-tab="logistics"
-                >
-                  View More
+                <button class="tab-button" aria-label="Logistics Tab" data-tab="logistics">
+                  <a href="equipment.html">View More</a>
                 </button>
               </div>
             </div>
           </article>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- Our Partners Section -->
-    <!-- <h2 class="partner-heading">Our Partners</h2>
+  <!-- Our Partners Section -->
+  <!-- <h2 class="partner-heading">Our Partners</h2>
     <section class="partners">
       <div class="partners-container">
         <div class="partner-slide">
@@ -454,356 +419,324 @@
       </div>
     </section> -->
 
-    <!-- Project Gallery Section -->
-    <section class="project-gallery">
-      <h2 class="project-gallery-heading">Project Gallery</h2>
-      <div class="project-gallery-container">
-        <div class="project-gallery-grid">
-          <div class="project-gallery-item">
-            <h2>Completed Projects</h2>
-            <div class="gallery">
+  <!-- Project Gallery Section -->
+  <section class="project-gallery">
+    <h2 class="project-gallery-heading">Project Gallery</h2>
+    <div class="project-gallery-container">
+      <div class="project-gallery-grid">
+        <div class="project-gallery-item">
+          <h2>Completed Projects</h2>
+          <div class="gallery">
+            <img
+              src="https://i.postimg.cc/4dYBF86b/premium-photo-1676625176020-3bbb1c0adea1-mark-https-images-unsplash-com-opengraph-logo-png-mark-w.jpg"
+              alt="Completed Projects" />
+            <div class="overlay">
+              <a href="completed.html" class="view-more">
+                <i class="fas fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="project-gallery-item">
+          <h2>Current Projects</h2>
+          <div class="gallery">
+            <img
+              src="https://i.postimg.cc/Yq68VLWV/photo-1494145904049-0dca59b4bbad-mark-https-images-unsplash-com-opengraph-logo-png-mark-w-64-mark.jpg"
+              alt="Current Projects" />
+            <div class="overlay">
+              <a href="ongoing.html" class="view-more">
+                <i class="fas fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="testimonials">
+    <div class="page">
+      <div class="container swiper">
+        <h2 class="title">What Our Clients Love About Us</h2>
+        <div class="testimonials--1 swiper-wrapper">
+          <div class="testimonial-card swiper-slide">
+            <div class="testimonial-image">
               <img
-                src="https://i.postimg.cc/4dYBF86b/premium-photo-1676625176020-3bbb1c0adea1-mark-https-images-unsplash-com-opengraph-logo-png-mark-w.jpg"
-                alt="Completed Projects"
-              />
-              <div class="overlay">
-                <a href="completed.html" class="view-more">
-                  <i class="fas fa-arrow-right"></i>
-                </a>
+                src="https://i.postimg.cc/Yq68VLWV/photo-1494145904049-0dca59b4bbad-mark-https-images-unsplash-com-opengraph-logo-png-mark-w-64-mark.jpg"
+                alt="Client Image" width="80" height="80" />
+            </div>
+            <div class="testimonial-content">
+              <h3 class="name">Noah Davis</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
+                consequatur ea, excepturi sit quidem in nam sequi, voluptatum
+                inventore obcaecati voluptates suscipit ipsam. Dignissimos
+                molestiae ipsum perspiciatis repellat deserunt saepe?
+              </p>
+              <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
               </div>
             </div>
           </div>
-          <div class="project-gallery-item">
-            <h2>Current Projects</h2>
-            <div class="gallery">
+          <div class="testimonial-card swiper-slide">
+            <div class="testimonial-image">
               <img
                 src="https://i.postimg.cc/Yq68VLWV/photo-1494145904049-0dca59b4bbad-mark-https-images-unsplash-com-opengraph-logo-png-mark-w-64-mark.jpg"
-                alt="Current Projects"
-              />
-              <div class="overlay">
-                <a href="ongoing.html" class="view-more">
-                  <i class="fas fa-arrow-right"></i>
-                </a>
+                alt="Client Image" width="80" height="80" />
+            </div>
+            <div class="testimonial-content">
+              <h3 class="name">Mason Taylor</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
+                consequatur ea, excepturi sit quidem in nam sequi, voluptatum
+                inventore obcaecati voluptates suscipit ipsam. Dignissimos
+                molestiae ipsum perspiciatis repellat deserunt saepe?
+              </p>
+              <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card swiper-slide">
+            <div class="testimonial-image">
+              <img
+                src="https://i.postimg.cc/Yq68VLWV/photo-1494145904049-0dca59b4bbad-mark-https-images-unsplash-com-opengraph-logo-png-mark-w-64-mark.jpg"
+                alt="Client Image" width="80" height="80" />
+            </div>
+            <div class="testimonial-content">
+              <h3 class="name">Lucas Thomas</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
+                consequatur ea, excepturi sit quidem in nam sequi, voluptatum
+                inventore obcaecati voluptates suscipit ipsam. Dignissimos
+                molestiae ipsum perspiciatis repellat deserunt saepe?
+              </p>
+              <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card swiper-slide">
+            <div class="testimonial-image">
+              <img
+                src="https://i.postimg.cc/Yq68VLWV/photo-1494145904049-0dca59b4bbad-mark-https-images-unsplash-com-opengraph-logo-png-mark-w-64-mark.jpg"
+                alt="Client Image" width="80" height="80" />
+            </div>
+            <div class="testimonial-content">
+              <h3 class="name">Olivia Martinez</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
+                consequatur ea, excepturi sit quidem in nam sequi, voluptatum
+                inventore obcaecati voluptates suscipit ipsam. Dignissimos
+                molestiae ipsum perspiciatis repellat deserunt saepe?
+              </p>
+              <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card swiper-slide">
+            <div class="testimonial-image">
+              <img
+                src="https://i.postimg.cc/Yq68VLWV/photo-1494145904049-0dca59b4bbad-mark-https-images-unsplash-com-opengraph-logo-png-mark-w-64-mark.jpg"
+                alt="Client Image" width="80" height="80" />
+            </div>
+            <div class="testimonial-content">
+              <h3 class="name">Liam Johnson</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
+                consequatur ea, excepturi sit quidem in nam sequi, voluptatum
+                inventore obcaecati voluptates suscipit ipsam. Dignissimos
+                molestiae ipsum perspiciatis repellat deserunt saepe?
+              </p>
+              <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card swiper-slide">
+            <div class="testimonial-image">
+              <img
+                src="https://i.postimg.cc/Yq68VLWV/photo-1494145904049-0dca59b4bbad-mark-https-images-unsplash-com-opengraph-logo-png-mark-w-64-mark.jpg"
+                alt="Client Image" width="80" height="80" />
+            </div>
+            <div class="testimonial-content">
+              <h3 class="name">Sophia Anderson</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
+                consequatur ea, excepturi sit quidem in nam sequi, voluptatum
+                inventore obcaecati voluptates suscipit ipsam. Dignissimos
+                molestiae ipsum perspiciatis repellat deserunt saepe?
+              </p>
+              <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card swiper-slide">
+            <div class="testimonial-image">
+              <img
+                src="https://i.postimg.cc/Yq68VLWV/photo-1494145904049-0dca59b4bbad-mark-https-images-unsplash-com-opengraph-logo-png-mark-w-64-mark.jpg"
+                alt="Client Image" width="80" height="80" />
+            </div>
+            <div class="testimonial-content">
+              <h3 class="name">Charlotte Lewis</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
+                consequatur ea, excepturi sit quidem in nam sequi, voluptatum
+                inventore obcaecati voluptates suscipit ipsam. Dignissimos
+                molestiae ipsum perspiciatis repellat deserunt saepe?
+              </p>
+              <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card swiper-slide">
+            <div class="testimonial-image">
+              <img
+                src="https://i.postimg.cc/Yq68VLWV/photo-1494145904049-0dca59b4bbad-mark-https-images-unsplash-com-opengraph-logo-png-mark-w-64-mark.jpg"
+                alt="Client Image" width="80" height="80" />
+            </div>
+            <div class="testimonial-content">
+              <h3 class="name">Isabella Clark</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
+                consequatur ea, excepturi sit quidem in nam sequi, voluptatum
+                inventore obcaecati voluptates suscipit ipsam. Dignissimos
+                molestiae ipsum perspiciatis repellat deserunt saepe?
+              </p>
+              <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card swiper-slide">
+            <div class="testimonial-image">
+              <img
+                src="https://i.postimg.cc/Yq68VLWV/photo-1494145904049-0dca59b4bbad-mark-https-images-unsplash-com-opengraph-logo-png-mark-w-64-mark.jpg"
+                alt="Client Image" width="80" height="80" />
+            </div>
+            <div class="testimonial-content">
+              <h3 class="name">Ethan Harris</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
+                consequatur ea, excepturi sit quidem in nam sequi, voluptatum
+                inventore obcaecati voluptates suscipit ipsam. Dignissimos
+                molestiae ipsum perspiciatis repellat deserunt saepe?
+              </p>
+              <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </section>
+      <div class="swiper-pagination"></div>
+    </div>
+  </section>
 
-    <!-- Testimonials Section -->
-    <section class="testimonials">
-      <div class="page">
-        <div class="container swiper">
-          <h2 class="title">What Our Clients Love About Us</h2>
-          <div class="testimonials--1 swiper-wrapper">
-            <div class="testimonial-card swiper-slide">
-              <div class="testimonial-image">
-                <img
-                  src="https://i.postimg.cc/Yq68VLWV/photo-1494145904049-0dca59b4bbad-mark-https-images-unsplash-com-opengraph-logo-png-mark-w-64-mark.jpg"
-                  alt="Client Image"
-                  width="80"
-                  height="80"
-                />
-              </div>
-              <div class="testimonial-content">
-                <h3 class="name">Noah Davis</h3>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
-                  consequatur ea, excepturi sit quidem in nam sequi, voluptatum
-                  inventore obcaecati voluptates suscipit ipsam. Dignissimos
-                  molestiae ipsum perspiciatis repellat deserunt saepe?
-                </p>
-                <div class="rating">
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                </div>
-              </div>
-            </div>
-            <div class="testimonial-card swiper-slide">
-              <div class="testimonial-image">
-                <img
-                  src="https://i.postimg.cc/Yq68VLWV/photo-1494145904049-0dca59b4bbad-mark-https-images-unsplash-com-opengraph-logo-png-mark-w-64-mark.jpg"
-                  alt="Client Image"
-                  width="80"
-                  height="80"
-                />
-              </div>
-              <div class="testimonial-content">
-                <h3 class="name">Mason Taylor</h3>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
-                  consequatur ea, excepturi sit quidem in nam sequi, voluptatum
-                  inventore obcaecati voluptates suscipit ipsam. Dignissimos
-                  molestiae ipsum perspiciatis repellat deserunt saepe?
-                </p>
-                <div class="rating">
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                </div>
-              </div>
-            </div>
-            <div class="testimonial-card swiper-slide">
-              <div class="testimonial-image">
-                <img
-                  src="https://i.postimg.cc/Yq68VLWV/photo-1494145904049-0dca59b4bbad-mark-https-images-unsplash-com-opengraph-logo-png-mark-w-64-mark.jpg"
-                  alt="Client Image"
-                  width="80"
-                  height="80"
-                />
-              </div>
-              <div class="testimonial-content">
-                <h3 class="name">Lucas Thomas</h3>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
-                  consequatur ea, excepturi sit quidem in nam sequi, voluptatum
-                  inventore obcaecati voluptates suscipit ipsam. Dignissimos
-                  molestiae ipsum perspiciatis repellat deserunt saepe?
-                </p>
-                <div class="rating">
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                </div>
-              </div>
-            </div>
-            <div class="testimonial-card swiper-slide">
-              <div class="testimonial-image">
-                <img
-                  src="https://i.postimg.cc/Yq68VLWV/photo-1494145904049-0dca59b4bbad-mark-https-images-unsplash-com-opengraph-logo-png-mark-w-64-mark.jpg"
-                  alt="Client Image"
-                  width="80"
-                  height="80"
-                />
-              </div>
-              <div class="testimonial-content">
-                <h3 class="name">Olivia Martinez</h3>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
-                  consequatur ea, excepturi sit quidem in nam sequi, voluptatum
-                  inventore obcaecati voluptates suscipit ipsam. Dignissimos
-                  molestiae ipsum perspiciatis repellat deserunt saepe?
-                </p>
-                <div class="rating">
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                </div>
-              </div>
-            </div>
-            <div class="testimonial-card swiper-slide">
-              <div class="testimonial-image">
-                <img
-                  src="https://i.postimg.cc/Yq68VLWV/photo-1494145904049-0dca59b4bbad-mark-https-images-unsplash-com-opengraph-logo-png-mark-w-64-mark.jpg"
-                  alt="Client Image"
-                  width="80"
-                  height="80"
-                />
-              </div>
-              <div class="testimonial-content">
-                <h3 class="name">Liam Johnson</h3>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
-                  consequatur ea, excepturi sit quidem in nam sequi, voluptatum
-                  inventore obcaecati voluptates suscipit ipsam. Dignissimos
-                  molestiae ipsum perspiciatis repellat deserunt saepe?
-                </p>
-                <div class="rating">
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                </div>
-              </div>
-            </div>
-            <div class="testimonial-card swiper-slide">
-              <div class="testimonial-image">
-                <img
-                  src="https://i.postimg.cc/Yq68VLWV/photo-1494145904049-0dca59b4bbad-mark-https-images-unsplash-com-opengraph-logo-png-mark-w-64-mark.jpg"
-                  alt="Client Image"
-                  width="80"
-                  height="80"
-                />
-              </div>
-              <div class="testimonial-content">
-                <h3 class="name">Sophia Anderson</h3>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
-                  consequatur ea, excepturi sit quidem in nam sequi, voluptatum
-                  inventore obcaecati voluptates suscipit ipsam. Dignissimos
-                  molestiae ipsum perspiciatis repellat deserunt saepe?
-                </p>
-                <div class="rating">
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                </div>
-              </div>
-            </div>
-            <div class="testimonial-card swiper-slide">
-              <div class="testimonial-image">
-                <img
-                  src="https://i.postimg.cc/Yq68VLWV/photo-1494145904049-0dca59b4bbad-mark-https-images-unsplash-com-opengraph-logo-png-mark-w-64-mark.jpg"
-                  alt="Client Image"
-                  width="80"
-                  height="80"
-                />
-              </div>
-              <div class="testimonial-content">
-                <h3 class="name">Charlotte Lewis</h3>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
-                  consequatur ea, excepturi sit quidem in nam sequi, voluptatum
-                  inventore obcaecati voluptates suscipit ipsam. Dignissimos
-                  molestiae ipsum perspiciatis repellat deserunt saepe?
-                </p>
-                <div class="rating">
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                </div>
-              </div>
-            </div>
-            <div class="testimonial-card swiper-slide">
-              <div class="testimonial-image">
-                <img
-                  src="https://i.postimg.cc/Yq68VLWV/photo-1494145904049-0dca59b4bbad-mark-https-images-unsplash-com-opengraph-logo-png-mark-w-64-mark.jpg"
-                  alt="Client Image"
-                  width="80"
-                  height="80"
-                />
-              </div>
-              <div class="testimonial-content">
-                <h3 class="name">Isabella Clark</h3>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
-                  consequatur ea, excepturi sit quidem in nam sequi, voluptatum
-                  inventore obcaecati voluptates suscipit ipsam. Dignissimos
-                  molestiae ipsum perspiciatis repellat deserunt saepe?
-                </p>
-                <div class="rating">
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                </div>
-              </div>
-            </div>
-            <div class="testimonial-card swiper-slide">
-              <div class="testimonial-image">
-                <img
-                  src="https://i.postimg.cc/Yq68VLWV/photo-1494145904049-0dca59b4bbad-mark-https-images-unsplash-com-opengraph-logo-png-mark-w-64-mark.jpg"
-                  alt="Client Image"
-                  width="80"
-                  height="80"
-                />
-              </div>
-              <div class="testimonial-content">
-                <h3 class="name">Ethan Harris</h3>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
-                  consequatur ea, excepturi sit quidem in nam sequi, voluptatum
-                  inventore obcaecati voluptates suscipit ipsam. Dignissimos
-                  molestiae ipsum perspiciatis repellat deserunt saepe?
-                </p>
-                <div class="rating">
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                </div>
-              </div>
-            </div>
+  <!-- Blog Section -->
+  <section class="blog">
+    <div class="blog-container">
+      <h2 class="blog-heading">Real Estate Insights and News</h2>
+      <div class="blog-grid">
+        <!-- Blog Post 1 -->
+        <article class="blog-post">
+          <div class="blog-image">
+            <img
+              src="https://i.postimg.cc/4dYBF86b/premium-photo-1676625176020-3bbb1c0adea1-mark-https-images-unsplash-com-opengraph-logo-png-mark-w.jpg"
+              alt="Blog Image" />
           </div>
-        </div>
-        <div class="swiper-pagination"></div>
-      </div>
-    </section>
+          <div class="blog-content">
+            <h3 class="blog-title">
+              The Benefits of Investing in Real Estate
+            </h3>
+            <p class="blog-excerpt">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit
+              amet nulla auctor, vestibulum magna sed, convallis ex.
+            </p>
+            <a href="#" class="read-more">Read More</a>
+          </div>
+        </article>
 
-    <!-- Blog Section -->
-    <section class="blog">
-      <div class="blog-container">
-        <h2 class="blog-heading">Real Estate Insights and News</h2>
-        <div class="blog-grid">
-          <!-- Blog Post 1 -->
-          <article class="blog-post">
-            <div class="blog-image">
-              <img
-                src="https://i.postimg.cc/4dYBF86b/premium-photo-1676625176020-3bbb1c0adea1-mark-https-images-unsplash-com-opengraph-logo-png-mark-w.jpg"
-                alt="Blog Image"
-              />
-            </div>
-            <div class="blog-content">
-              <h3 class="blog-title">
-                The Benefits of Investing in Real Estate
-              </h3>
-              <p class="blog-excerpt">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit
-                amet nulla auctor, vestibulum magna sed, convallis ex.
-              </p>
-              <a href="#" class="read-more">Read More</a>
-            </div>
-          </article>
+        <!-- Blog Post 2 -->
+        <article class="blog-post">
+          <div class="blog-image">
+            <img
+              src="https://i.postimg.cc/Yq68VLWV/photo-1494145904049-0dca59b4bbad-mark-https-images-unsplash-com-opengraph-logo-png-mark-w-64-mark.jpg"
+              alt="Blog Image" />
+          </div>
+          <div class="blog-content">
+            <h3 class="blog-title">
+              The Top 5 Neighborhoods to Live in Ghana
+            </h3>
+            <p class="blog-excerpt">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit
+              amet nulla auctor, vestibulum magna sed, convallis ex.
+            </p>
+            <a href="#" class="read-more">Read More</a>
+          </div>
+        </article>
 
-          <!-- Blog Post 2 -->
-          <article class="blog-post">
-            <div class="blog-image">
-              <img
-                src="https://i.postimg.cc/Yq68VLWV/photo-1494145904049-0dca59b4bbad-mark-https-images-unsplash-com-opengraph-logo-png-mark-w-64-mark.jpg"
-                alt="Blog Image"
-              />
-            </div>
-            <div class="blog-content">
-              <h3 class="blog-title">
-                The Top 5 Neighborhoods to Live in Ghana
-              </h3>
-              <p class="blog-excerpt">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit
-                amet nulla auctor, vestibulum magna sed, convallis ex.
-              </p>
-              <a href="#" class="read-more">Read More</a>
-            </div>
-          </article>
+        <!-- Blog Post 3 -->
+        <article class="blog-post">
+          <div class="blog-image">
+            <img
+              src="https://i.postimg.cc/KzTtMC7V/photo-1702905394338-4af58b6dbf61-mark-https-images-unsplash-com-opengraph-logo-png-mark-w-64-mark.jpg"
+              alt="Blog Image" />
+          </div>
+          <div class="blog-content">
+            <h3 class="blog-title">
+              The Pros and Cons of Renting vs Buying a Home
+            </h3>
+            <p class="blog-excerpt">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit
+              amet nulla auctor, vestibulum magna sed, convallis ex.
+            </p>
+            <a href="#" class="read-more">Read More</a>
+          </div>
+        </article>
 
-          <!-- Blog Post 3 -->
-          <article class="blog-post">
-            <div class="blog-image">
-              <img
-                src="https://i.postimg.cc/KzTtMC7V/photo-1702905394338-4af58b6dbf61-mark-https-images-unsplash-com-opengraph-logo-png-mark-w-64-mark.jpg"
-                alt="Blog Image"
-              />
-            </div>
-            <div class="blog-content">
-              <h3 class="blog-title">
-                The Pros and Cons of Renting vs Buying a Home
-              </h3>
-              <p class="blog-excerpt">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit
-                amet nulla auctor, vestibulum magna sed, convallis ex.
-              </p>
-              <a href="#" class="read-more">Read More</a>
-            </div>
-          </article>
-
-          <!-- Blog Post 4 -->
-          <!-- <article class="blog-post">
+        <!-- Blog Post 4 -->
+        <!-- <article class="blog-post">
             <div class="blog-image">
               <img
                 src="https://i.postimg.cc/k5BQn227/photo-1702742711296-98086d25f8d0-mark-https-images-unsplash-com-opengraph-logo-png-mark-w-64-mark.jpg"
@@ -821,84 +754,81 @@
               <a href="#" class="read-more">Read More</a>
             </div>
           </article> -->
-        </div>
-        <button class="load-more">Load More</button>
       </div>
-    </section>
+      <button class="load-more">Load More</button>
+    </div>
+  </section>
 
-    <!-- Contact Section -->
-    <section class="contact" id="contact">
-      <div class="contact-container">
-        <h2 class="contact-heading">Get in Touch</h2>
-        <p class="contact-subheading">We'd love to hear from you!</p>
-        <div class="contact-grid">
-          <div class="contact-form">
-            <form id="contact-form">
-              <div class="form-group">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required />
-              </div>
-              <div class="form-group">
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required />
-              </div>
-              <div class="form-group">
-                <label for="phone">Phone:</label>
-                <input type="tel" id="phone" name="phone" />
-              </div>
-              <div class="form-group">
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" required></textarea>
-              </div>
-              <button type="submit" class="submit-btn">Send Message</button>
-            </form>
+  <!-- Contact Section -->
+  <section class="contact" id="contact">
+    <div class="contact-container">
+      <h2 class="contact-heading">Get in Touch</h2>
+      <p class="contact-subheading">We'd love to hear from you!</p>
+      <div class="contact-grid">
+        <div class="contact-form">
+          <form id="contact-form">
+            <div class="form-group">
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone:</label>
+              <input type="tel" id="phone" name="phone" />
+            </div>
+            <div class="form-group">
+              <label for="message">Message:</label>
+              <textarea id="message" name="message" required></textarea>
+            </div>
+            <button type="submit" class="submit-btn">Send Message</button>
+          </form>
+        </div>
+        <div class="contact-info">
+          <h3 class="contact-info-heading">Contact Information</h3>
+          <div class="contact-info-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <p class="contact-info-address">123 Kwabenya St, Accra, Ghana</p>
           </div>
-          <div class="contact-info">
-            <h3 class="contact-info-heading">Contact Information</h3>
-            <div class="contact-info-item">
-              <i class="fas fa-map-marker-alt"></i>
-              <p class="contact-info-address">123 Kwabenya St, Accra, Ghana</p>
-            </div>
-            <div class="contact-info-item">
-              <i class="fas fa-phone"></i>
-              <p class="contact-info-phone">+233 123 456 789</p>
-            </div>
-            <div class="contact-info-item">
-              <i class="fas fa-envelope"></i>
-              <p class="contact-info-email">domusgh@yahoo.com</p>
-            </div>
-
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31761.433390730137!2d-0.2710135646303809!3d5.687228539762453!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdf9e5ae5ea1e87%3A0x4b87d6d59a88aaed!2sKwabenya!5e0!3m2!1sen!2sgh!4v1727439506341!5m2!1sen!2sgh"
-              width="400"
-              height="300"
-              style="border: 0"
-              allowfullscreen=""
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-            ></iframe>
+          <div class="contact-info-item">
+            <i class="fas fa-phone"></i>
+            <p class="contact-info-phone">+233 123 456 789</p>
           </div>
+          <div class="contact-info-item">
+            <i class="fas fa-envelope"></i>
+            <p class="contact-info-email">domusgh@yahoo.com</p>
+          </div>
+
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31761.433390730137!2d-0.2710135646303809!3d5.687228539762453!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdf9e5ae5ea1e87%3A0x4b87d6d59a88aaed!2sKwabenya!5e0!3m2!1sen!2sgh!4v1727439506341!5m2!1sen!2sgh"
+            width="400" height="300" style="border: 0" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- Footer Section -->
-    <footer class="footer">
-      <div class="footer-container">
-        <div class="footer-left">
-          <p>
-            &copy; <span id="year"></span> Domus Ghana LTD. All rights reserved.
-          </p>
-        </div>
-        <div class="footer-right">
-          <p>Powered by Msoft Ghana</p>
-        </div>
+  <!-- Footer Section -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-left">
+        <p>
+          &copy; <span id="year"></span> Domus Ghana LTD. All rights reserved.
+        </p>
       </div>
-    </footer>
+      <div class="footer-right">
+        <p>Powered by Msoft Ghana</p>
+      </div>
+    </div>
+  </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-  </body>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
 </html>

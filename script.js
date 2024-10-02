@@ -28,6 +28,7 @@ document.addEventListener("click", function (event) {
   }
 });
 
+
 // main slider
 
 const slider = document.querySelector(".slider");
@@ -139,4 +140,50 @@ const currentYear = new Date().getFullYear();
 yearElement.textContent = currentYear;
 
 
+// Select all hero cards
+const heroCards = document.querySelectorAll('.hero-card');
 
+// Create a single timeline for all animations
+const timeline = gsap.timeline({
+  scrollTrigger: {
+    trigger: '.hero-cards-wrapper',
+    start: 'top 80%',
+    end: 'bottom 20%',
+    toggleActions: 'play none none reset'
+  }
+});
+
+// Animate each hero card
+heroCards.forEach((card, index) => {
+  const imageContainer = card.querySelector('.image-container');
+  const textContainer = card.querySelector('.text-container');
+
+  // Add animations for each hero card to the timeline
+  timeline.from(imageContainer, {
+    duration: 1.5,
+    x: -200,
+    opacity: 0,
+    ease: 'power2.inOut',
+    scale: 0.5
+  }, `+=${index * 0.5}`);
+  timeline.from(textContainer, {
+    duration: 1.5,
+    x: 200,
+    opacity: 0,
+    ease: 'power2.inOut',
+    delay: 0.5,
+    scale: 0.5
+  }, `+=${index * 0.5}`);
+  timeline.to(imageContainer, {
+    duration: 1,
+    rotation: 360,
+    ease: 'power2.inOut',
+    delay: 1.5
+  }, `+=${index * 0.5}`);
+  timeline.to(textContainer, {
+    duration: 1,
+    rotation: -360,
+    ease: 'power2.inOut',
+    delay: 1.5
+  }, `+=${index * 0.5}`);
+});
