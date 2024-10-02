@@ -7,6 +7,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  text-decoration: none;
 }
 
 html,
@@ -168,10 +169,10 @@ body {
 .main {
   position: relative;
   width: 100%;
-  height: 100%;
+  height: 60%;
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
-  top: 80px;
-  bottom: 80px;
+  top: 10px;
+  bottom: 30px;
 }
 
 .item {
@@ -189,6 +190,11 @@ body {
   transition: transform 0.1s, left 0.75s, top 0.75s, width 0.75s, height 0.75s;
 }
 
+.slider-btn a {
+  text-decoration: none;
+  color: var(--color-white);
+  font-size: 1.5rem;
+}
 .item:nth-child(1),
 .item:nth-child(2) {
   left: 0;
@@ -258,7 +264,7 @@ body {
 
 @keyframes show {
   0% {
-    filter: blur(5px);
+    filter: blur(8px);
     transform: translateY(calc(-50% + 75px));
   }
 
@@ -328,6 +334,19 @@ body {
 }
 
 @media (max-width: 649px) {
+  .main {
+    position: relative;
+    width: 100%;
+    height: 50%;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+    top: 10px;
+    bottom: 20px;
+  }
+
+  .slider-btn a {
+   color: var(--color-white);
+    font-size: 1.1rem;
+  }
   .content .title {
     font-size: 0.9rem;
   }
@@ -439,6 +458,8 @@ main {
   place-items: center;
   min-height: 100vh;
   background: -webkit-linear-gradient(0deg, hsla(302, 90%, 68%, 0.212), hsla(241, 76%, 47%, 0.5));
+  top: 10px;
+  bottom: 30px;
 }
 
 /* Content */
@@ -446,25 +467,27 @@ main {
 .content {
   padding-left: 120px;
   user-select: none;
+  top: 40px;
 }
 
 .content h1 {
   font-family: 'poppins';
-  font-size: clamp(2.5rem, 3vw, 5rem);
+  font-size: clamp(2.4rem, 3vw, 4rem);
   font-weight: 700;
   background: -webkit-linear-gradient(0deg, hsla(302, 90%, 68%, 0.881), hsla(241, 64%, 47%, 0.886));
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   line-height: 1.1;
-  margin-bottom: 36px;
+  margin-bottom: 16px;
   padding-left: 10px;
-  margin-top: 80px;
+  top: 10px;
+  margin-top: 30px;
 }
 
 .content p {
-  font-size: clamp(0.9rem, 4vw, 1.2rem);
-  line-height: 1.6;
+  font-size: clamp(0.8rem, 4vw, 1.1rem);
+  line-height: 1.4;
   padding-right: 100px;
   color: #383636;
 }
@@ -501,6 +524,9 @@ main {
 
 .stack {
   position: relative;
+  height: 60vh;
+  top: 20px;
+  bottom: 10px;
 }
 
 .card {
@@ -509,7 +535,7 @@ main {
   top: 50%;
   left: 50%;
   width: 350px;
-  height: 500px;
+  height: 400px;
   border-radius: 2rem;
   box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.25),
     0 15px 20px 0 rgba(0, 0, 0, 0.125);
@@ -716,6 +742,13 @@ main {
   padding: 0;
 }
 
+.hero-cards {
+  background: -webkit-linear-gradient(
+    0deg,
+    rgb(244, 243, 246),
+    hsl(0, 0%, 67%)
+  );
+}
 .hero-card .card-content {
   display: flex;
   align-items: center;
@@ -723,6 +756,7 @@ main {
   width: 100%;
   margin: 0;
   padding: 0;
+  background-color: rgb(205, 205, 205);
 }
 
 .hero-card .image-container {
@@ -782,11 +816,11 @@ main {
 
 .hero-card[data-category="real-estate"] .card-content {
   flex-direction: row;
-  background-color: var(--secondary-color);
+  /* background-color: rgb(205, 205, 205); */
 }
 .hero-card[data-category="accommodation"] .card-content {
   flex-direction: row-reverse;
-  background-color: rgb(205, 205, 205);
+  /* background-color: rgb(205, 205, 205); */
   margin: 0;
   padding: 0;
   width: 100%;
@@ -799,7 +833,7 @@ main {
 /* Reverse the order of image and text for the third card */
 .hero-card[data-category="logistics"] .card-content {
   flex-direction: row;
-  background-color: var(--secondary-color);
+  /* background-color: rgb(205, 205, 205); */
 }
 
 /* Partners */
