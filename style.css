@@ -36,7 +36,7 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  background-color: hsla(277, 27%, 58%, 0.6);
+  background-color:  hsla(210, 90%, 27%, 0.612);
   padding: 0.95em, 1em;
   display: flex;
   justify-content: space-between;
@@ -121,7 +121,7 @@ body {
 .dropdown-menu {
   display: none;
   position: absolute;
-  background-color: hsla(277, 27%, 58%, 0.6);
+  background-color:  hsla(210, 86%, 33%, 0.596);
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
    backdrop-filter: blur(80px);
@@ -231,7 +231,7 @@ body {
   left: 3rem;
   transform: translateY(-50%);
   font: 400 0.85rem 'poppins' sans-serif;
-  color: #dadada;
+  color: #efebeb;
   text-shadow: 0 3px 8px rgba(0, 0, 0, 0.5);
   opacity: 0;
   display: none;
@@ -457,7 +457,7 @@ main {
   grid-template-rows: 1fr;
   place-items: center;
   min-height: 100vh;
-  background: -webkit-linear-gradient(0deg, hsla(302, 90%, 68%, 0.212), hsla(241, 76%, 47%, 0.5));
+  background: -webkit-linear-gradient(0deg, hsla(210, 86%, 33%, 0.596), hsla(223, 95%, 29%, 0.712));
   top: 10px;
   bottom: 30px;
 }
@@ -474,7 +474,7 @@ main {
   font-family: 'poppins';
   font-size: clamp(2.4rem, 3vw, 4rem);
   font-weight: 700;
-  background: -webkit-linear-gradient(0deg, hsla(302, 90%, 68%, 0.881), hsla(241, 64%, 47%, 0.886));
+  background: -webkit-linear-gradient(0deg, hsla(300, 10%, 96%, 0.941),hsla(180, 1%, 76%, 0.957));
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -489,12 +489,12 @@ main {
   font-size: clamp(0.8rem, 4vw, 1.1rem);
   line-height: 1.4;
   padding-right: 100px;
-  color: #383636;
+  color: hsl(0, 0%, 88%);
 }
 
 .btn {
-  background-color: #f765d7;
-  background-image: linear-gradient(-180deg, hsla(291, 80%, 74%, 0.897), hsla(241, 64%, 47%, 0.886));
+  background-color:  hsla(210, 86%, 33%, 0.648);
+  background-image: linear-gradient(-180deg, hsla(291, 7%, 81%, 0.897),hsla(210, 86%, 33%, 0.596));
   font-size: clamp(0.8rem, 8vw, 0.9rem);
   font-weight: 600;
   color: #fff;
@@ -516,7 +516,7 @@ main {
 }
 
 .btn:hover {
-  box-shadow: 0 4px 10px rgba(247, 101, 223, 0.5);
+  box-shadow: 0 4px 10px  hsl(210, 86%, 33%);
   transform: scale(0.98);
 }
 
@@ -739,7 +739,7 @@ main {
   color: var(--color-white);
   box-sizing: border-box;
    margin: 0;
-  padding: 0;
+  padding-inline: 0;
 }
 
 .hero-cards {
@@ -754,9 +754,10 @@ main {
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  margin: 0;
+  margin-inline: 0;
   padding: 0;
-  background-color: rgb(205, 205, 205);
+  color: hsl(0, 0%, 2%);
+  background-color: rgba(255, 255, 255, 0.881);
 }
 
 .hero-card .image-container {
@@ -791,36 +792,39 @@ main {
   font-size: 1.5rem;
   font-weight: 800;
   margin-bottom: 10px;
+  color: hsl(0, 0%, 2%);
+  text-align: center;
+
 }
 
 .hero-card .text-container p {
   font-size: 1.3rem;
-  color: var(--color-white);
+    color: hsl(0, 0%, 2%);
   margin-bottom: 20px;
+  text-align: center;
 }
 
 .hero-card .text-container .tab-button {
-  background-color: #1a2b63;
+  background-color:  hsla(210, 93%, 22%, 0.795);
   color: #fff;
   padding: 10px 20px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  margin-left: 8px;
 }
 
 .hero-card .text-container .tab-button:hover {
-  background-color: #1b417a;
+  background-color: hsl(216, 70%, 31%);
 }
 
 /* Reverse the order of image and text for the second card */
 
 .hero-card[data-category="real-estate"] .card-content {
   flex-direction: row;
-  /* background-color: rgb(205, 205, 205); */
 }
 .hero-card[data-category="accommodation"] .card-content {
   flex-direction: row-reverse;
-  /* background-color: rgb(205, 205, 205); */
   margin: 0;
   padding: 0;
   width: 100%;
@@ -833,12 +837,11 @@ main {
 /* Reverse the order of image and text for the third card */
 .hero-card[data-category="logistics"] .card-content {
   flex-direction: row;
-  /* background-color: rgb(205, 205, 205); */
 }
 
 /* Partners */
 .partners {
-  background-color: #f7f7f7;
+  background-color: hsl(0, 0%, 97%);
   padding: 10px 0;
   display: flex;
   justify-content: center;
@@ -846,12 +849,12 @@ main {
 
 .partner-heading {
   font-family: "poppins";
-  font-size: clamp(1.1rem, 3vw, 5rem);
+  font-size: clamp(1.3rem, 3.5vw, 5.5rem);
   font-weight: 700;
   background: -webkit-linear-gradient(
     0deg,
-    rgb(22, 132, 206),
-    var(--secondary-color)
+    hsla(223, 89%, 37%, 0.854),
+    hsla(0, 0%, 100%, 0.963)
   );
   background-clip: text;
   -webkit-background-clip: text;
@@ -902,8 +905,9 @@ main {
 
 /* Project Gallery */
 .project-gallery {
-  background-color: var(--secondary-color);
+  background-color:  hsla(210, 86%, 33%, 0.648);
   padding-block: 20px;
+  padding-inline: 20px;
 }
 
 .project-gallery-grid {
@@ -928,7 +932,7 @@ main {
   background: -webkit-linear-gradient(
     0deg,
     rgb(245, 247, 249),
-    var(--secondary-color)
+    hsla(210, 86%, 33%, 0.781)
   );
   background-clip: text;
   -webkit-background-clip: text;
@@ -1014,7 +1018,7 @@ main {
   background: -webkit-linear-gradient(
     0deg,
     rgb(22, 132, 206),
-    var(--secondary-color)
+    hsl(227, 77%, 45%)
   );
   background-clip: text;
   -webkit-background-clip: text;
@@ -1043,6 +1047,7 @@ main {
 
 .testimonial-content {
   flex: 1;
+  color: hsl(0, 0%, 17%);
 }
 
 .testimonial-content .name {
@@ -1086,7 +1091,7 @@ blog {
 .blog-heading {
   font-size: 36px;
   font-weight: bold;
-  color: var(--color-grey);
+  color: hsl(0, 0%, 17%);
   text-align: center;
   margin-bottom: 20px;
 }
@@ -1172,7 +1177,7 @@ blog {
 /* Contact Section */
 .contact {
   padding: 100px 0;
-  background-color: #f7f7f7;
+  background-color: var(--color-grey);
 }
 
 .contact-container {
@@ -1233,7 +1238,7 @@ blog {
 }
 
 .submit-btn {
-  background-color: var(--primary-color);
+  background-color: hsla(210, 90%, 23%, 0.872);
   color: #fff;
   padding: 10px 20px;
   border: none;
@@ -1257,7 +1262,7 @@ blog {
 .contact-info-item i {
   font-size: 24px;
   margin-right: 10px;
-  color: var(--primary-color);
+  color: hsla(208, 90%, 23%, 0.868);
 }
 
 .contact-info-address,
@@ -1282,7 +1287,7 @@ blog {
 }
 /* Footer */
 .footer {
-  background-color: hsla(277, 27%, 58%, 0.6);
+  background-color:  hsla(210, 86%, 33%, 0.648);
   color: #fff;
   padding: 20px;
   text-align: center;
@@ -1503,7 +1508,7 @@ blog {
     font-family: "Open Sans", sans-serif;
     backdrop-filter: blur(50px);
     -webkit-backdrop-filter: blur(50px);
-    background-color: hsla(277, 27%, 58%, 0.6);
+    background-color: hsla(228, 84%, 40%, 0.676);
     z-index: -999;
     transition: all 1s ease-in-out;
   }
