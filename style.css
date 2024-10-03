@@ -542,11 +542,12 @@ main {
   width: 450px;
   height: 500px;
   border-radius: 2rem;
-  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.25),
-    0 15px 20px 0 rgba(0, 0, 0, 0.125);
+  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.25),
+    0 5px 10px 0 rgba(0, 0, 0, 0.027);
   transition: transform 0.6s;
   user-select: none;
 }
+
 
 .card img {
   display: block;
@@ -604,7 +605,7 @@ main {
 
 /* Media queries for keyframes */
 
-@media (max-width: 1200px) {
+/* @media (max-width: 1200px) {
   @keyframes swap {
     30% {
       transform: translate(calc(var(--x) - 200px), -50%) scale(0.85) rotate(-5deg) rotateY(65deg);
@@ -628,7 +629,7 @@ main {
       z-index: -1;
     }
   }
-}
+} */
 
 /* Media queries for other classes */
 
@@ -763,6 +764,13 @@ main {
   background-color: rgba(255, 255, 255, 0.881);
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1), 0 4px 8px rgba(0, 0, 0, 0.3);
   border-radius: 5px;
+  transition: all .8s ease-in-out;
+}
+
+.hero-card .card-content:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2), 0 20px 30px rgba(0, 0, 0, 0.1);
+  background-color: rgba(255, 255, 255, 0.963);
 }
 
 .hero-card .image-container {
@@ -803,8 +811,8 @@ main {
 }
 
 .hero-card .text-container p {
-  font-size: 1.5rem;
-  font-weight: 600;
+  font-size: 1.9rem;
+  font-weight: 500;
     color: hsl(0, 0%, 2%);
   margin-bottom: 20px;
   text-align: left;
@@ -1731,12 +1739,13 @@ blog {
     margin: 10px;
   }
   .partner-icon {
-    font-size: 18px;
+    font-size: 14px;
     margin: 10px;
+    margin-inline: 4px;
   }
 
   .partner-icon img {
-    width: 50px;
+    width: 45px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   }

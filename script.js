@@ -8,7 +8,6 @@
 //   btnEl.style.setProperty("--yPos", y + "px");
 // });
 
-
 // Mobile Nav
 document.getElementById("open-nav").addEventListener("click", function (event) {
   event.preventDefault();
@@ -27,7 +26,6 @@ document.addEventListener("click", function (event) {
     document.querySelector(".nav-toggle").classList.remove("active");
   }
 });
-
 
 // main slider
 
@@ -62,7 +60,7 @@ function autoplay() {
   autoplayTimeout = setTimeout(() => {
     autoplayRunning = false;
     autoplay();
-  }, 5000); 
+  }, 5000);
 }
 
 autoplay();
@@ -80,7 +78,6 @@ autoplay();
 //   }
 // });
 document.addEventListener("click", activate, false);
-
 
 // // Card swiper
 // const stack = document.querySelector(".stack");
@@ -116,8 +113,6 @@ document.addEventListener("click", activate, false);
 //   }
 // });
 
-
-
 // Swiper
 const swiper = new Swiper(".swiper", {
   grabCursor: true,
@@ -133,57 +128,70 @@ const swiper = new Swiper(".swiper", {
   },
 });
 
-
-
 const yearElement = document.getElementById("year");
 const currentYear = new Date().getFullYear();
 yearElement.textContent = currentYear;
 
-
 // Select all hero cards
-const heroCards = document.querySelectorAll('.hero-card');
+const heroCards = document.querySelectorAll(".hero-card");
 
 // Create a single timeline for all animations
 const timeline = gsap.timeline({
   scrollTrigger: {
-    trigger: '.hero-cards-wrapper',
-    start: 'top 80%',
-    end: 'bottom 20%',
-    toggleActions: 'play none none reset'
-  }
+    trigger: ".hero-cards-wrapper",
+    start: "top 80%",
+    end: "bottom 20%",
+    toggleActions: "play none none reset",
+  },
 });
 
 // Animate each hero card
 heroCards.forEach((card, index) => {
-  const imageContainer = card.querySelector('.image-container');
-  const textContainer = card.querySelector('.text-container');
+  const imageContainer = card.querySelector(".image-container");
+  const textContainer = card.querySelector(".text-container");
 
   // Add animations for each hero card to the timeline
-  timeline.from(imageContainer, {
-    duration: 1.5,
-    x: -200,
-    opacity: 0,
-    ease: 'power2.inOut',
-    scale: 0.5
-  }, `+=${index * 0.5}`);
-  timeline.from(textContainer, {
-    duration: 1.5,
-    x: 200,
-    opacity: 0,
-    ease: 'power2.inOut',
-    delay: 0.5,
-    scale: 0.5
-  }, `+=${index * 0.5}`);
-  timeline.to(imageContainer, {
-    duration: 1,
-    rotation: 360,
-    ease: 'power2.inOut',
-    delay: 1.5
-  }, `+=${index * 0.5}`);
-  timeline.to(textContainer, {
-    duration: 1,
-    rotation: -360,
-    ease: 'power2.inOut',
-    delay: 1.5
-  }, `+=${index * 0.5}`);
+  timeline.from(
+    imageContainer,
+    {
+      duration: 0.3, 
+      x: -200,
+      opacity: 0,
+      ease: "power2.inOut",
+      scale: 0.25,
+    },
+    `+=${index * 0.2}` 
+  );
+  timeline.from(
+    textContainer,
+    {
+      duration: 0.3,
+      x: 200,
+      opacity: 0,
+      ease: "power2.inOut",
+      delay: 0.1, 
+      scale: 0.5,
+    },
+    `+=${index * 0.2}` 
+  );
+  timeline.to(
+    imageContainer,
+    {
+      duration: 0.15, 
+      rotation: 360,
+      ease: "power2.inOut",
+      delay: 0.3, 
+    },
+    `+=${index * 0.2}` 
+  );
+  timeline.to(
+    textContainer,
+    {
+      duration: 0.15, 
+      rotation: -360,
+      ease: "power2.inOut",
+      delay: 0.3, 
+    },
+    `+=${index * 0.2}` 
+  );
 });
