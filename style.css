@@ -497,7 +497,7 @@ main {
   color: hsl(0, 0%, 88%);
 }
 
-.btn {
+/* .btn {
   background-color:  hsla(210, 86%, 33%, 0.648);
   background-image: linear-gradient(-180deg, hsla(291, 7%, 81%, 0.897),hsla(210, 86%, 33%, 0.596));
   font-size: clamp(0.8rem, 8vw, 0.9rem);
@@ -523,14 +523,14 @@ main {
 .btn:hover {
   box-shadow: 0 4px 10px  hsl(210, 86%, 33%);
   transform: scale(0.98);
-}
+} */
 
 /* Stacked Cards */
 
 .stack {
   position: relative;
   height: 60vh;
-  top: 20px;
+  top: 10px;
   bottom: 10px;
 }
 
@@ -539,8 +539,8 @@ main {
   transform: translate(-50%, -50%);
   top: 50%;
   left: 50%;
-  width: 350px;
-  height: 400px;
+  width: 450px;
+  height: 500px;
   border-radius: 2rem;
   box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.25),
     0 15px 20px 0 rgba(0, 0, 0, 0.125);
@@ -557,7 +557,7 @@ main {
   pointer-events: none;
 }
 
-.card:nth-last-child(n + 5) {
+/* .card:nth-last-child(n + 5) {
   --x: calc(-50% + 90px);
   transform: translate(var(--x), -50%) scale(0.85);
   box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.01);
@@ -576,7 +576,7 @@ main {
 .card:nth-last-child(2) {
   --x: calc(-50%);
   transform: translate(var(--x), -50%) scale(1);
-}
+} */
 
 .card:nth-last-child(1) {
   --x: calc(-50% - 30px);
@@ -587,11 +587,11 @@ main {
   box-shadow: 0 1px 5px 5px rgba(67, 121, 238, 0.5);
 }
 
-.swap {
+/* .swap {
   animation: swap 1.3s ease-out forwards;
-}
+} */
 
-@keyframes swap {
+/* @keyframes swap {
   30% {
     transform: translate(calc(var(--x) - 250px), -50%) scale(0.85) rotate(-5deg) rotateY(65deg);
   }
@@ -600,7 +600,7 @@ main {
     transform: translate(calc(var(--x) - 30px), -50%) scale(0.5);
     z-index: -1;
   }
-}
+} */
 
 /* Media queries for keyframes */
 
@@ -642,8 +642,8 @@ main {
   }
 
   .card {
-    width: 250px;
-    height: 380px;
+    width: 350px;
+    height: 480px;
   }
 }
 
@@ -657,8 +657,8 @@ main {
   }
 
   .card {
-    width: 220px;
-    height: 350px;
+    width: 320px;
+    height: 450px;
   }
 }
 
@@ -668,8 +668,8 @@ main {
   }
 
   .card {
-    width: 200px;
-    height: 300px;
+    width: 300px;
+    height: 400px;
   }
 }
 
@@ -722,6 +722,7 @@ main {
   .stack {
     margin-bottom: 3px;
     padding-block: 0;
+    margin-left: 20px; 
   }
 
   .btn {
@@ -729,8 +730,8 @@ main {
   }
 
   .card {
-    width: 180px;
-    height: 260px;
+    width: 280px;
+    height: 360px;
   }
 }
 /* Hero Section Styles */
@@ -1331,7 +1332,7 @@ blog {
 
 /* Media queries for keyframes */
 
-@media (max-width: 1200px) {
+/* @media (max-width: 1200px) {
   @keyframes swap {
     30% {
       transform: translate(calc(var(--x) - 200px), -50%) scale(0.85)
@@ -1357,7 +1358,7 @@ blog {
       z-index: -1;
     }
   }
-}
+} */
 
 /* Media queries for other classes */
 
@@ -1372,8 +1373,8 @@ blog {
   }
 
   .card {
-    width: 250px;
-    height: 400px;
+    width: 350px;
+    height: 450px;
   }
 }
 
@@ -1388,8 +1389,9 @@ blog {
   }
 
   .card {
-    width: 250px;
-    height: 390px;
+    width: 350px;
+    height: 490px;
+    margin-left: 20px;
   }
 }
 
@@ -1399,8 +1401,9 @@ blog {
   }
 
   .card {
-    width: 200px;
-    height: 320px;
+    width: 300px;
+    height: 420px;
+    margin-left: 20px;
   }
 }
 
@@ -1449,8 +1452,9 @@ blog {
   }
 
   .card {
-    width: 180px;
-    height: 250px;
+    width: 280px;
+    height: 350px;
+    margin-left: 20px;
   }
 }
 
