@@ -557,6 +557,8 @@ main {
   margin-left: 60px;
 }
 
+
+
 /* .card:nth-last-child(n + 5) {
   --x: calc(-50% + 90px);
   transform: translate(var(--x), -50%) scale(0.85);
@@ -649,7 +651,7 @@ main {
 
 @media (max-width: 1050px) {
   .content {
-    padding-left: 60px;
+    padding-left: 60px; 
   }
 
   .content h4 {
@@ -866,7 +868,7 @@ main {
 
 .partner-heading {
   font-family: "poppins";
-  font-size: clamp(1.3rem, 3.5vw, 5.5rem);
+  font-size: clamp(1rem, 3.2vw, 5rem);
   font-weight: 700;
   background: -webkit-linear-gradient(
     0deg,
@@ -896,9 +898,9 @@ main {
 }
 
 .partner-icon {
-  font-size: 30px;
+  font-size: 25px;
   color: #337ab7;
-  margin: 15px;
+  margin-block: 10px;
 }
 
 .partner-icon:hover {
@@ -1075,7 +1077,7 @@ main {
 .testimonial-content p {
   margin-bottom: 20px;
   margin-right: 10px;
-  font-size: 1rem;
+  font-size: .8rem;
   text-wrap: wrap;
 }
 
@@ -1624,7 +1626,7 @@ blog {
     margin-right: 30px;
   }
   .testimonial-content p {
-    font-size: 1rem;
+    font-size: .8rem;
   }
 }
 
@@ -1637,7 +1639,7 @@ blog {
     margin-right: 25px;
   }
   .testimonial-content p {
-    font-size: 1rem;
+    font-size: .7rem;
   }
 }
 
@@ -1652,7 +1654,7 @@ blog {
     margin-bottom: 20px;
   }
   .testimonial-content p {
-    font-size: 0.9rem;
+    font-size: 0.6rem;
   }
 }
 
@@ -1665,7 +1667,7 @@ blog {
     margin-bottom: 15px;
   }
   .testimonial-content p {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
   }
 }
 
@@ -1677,15 +1679,15 @@ blog {
     max-width: 1400px;
   }
   .partner-slide {
-    margin: 15px;
+    margin: 14px;
   }
   .partner-icon {
-    font-size: 45px;
-    margin: 20px;
+    font-size: 30px;
+    margin-block: 18px;
   }
   .partner-icon img {
-    width: 100px;
-    border-radius: 10px;
+    width: 80px;
+    border-radius: 50%;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   }
 }
@@ -1699,11 +1701,11 @@ blog {
     margin: 15px;
   }
   .partner-icon {
-    font-size: 32px;
-    margin: 15px;
+    font-size: 25px;
+    margin: 13px;
   }
   .partner-icon img {
-    width: 95px;
+    width: 75px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   }
