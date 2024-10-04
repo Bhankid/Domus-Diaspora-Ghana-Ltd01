@@ -868,8 +868,8 @@ main {
 
 .partner-heading {
   font-family: "poppins";
-  font-size: clamp(1rem, 3.2vw, 5rem);
-  font-weight: 700;
+  font-size: clamp(.6rem, 2vw, 3rem);
+  font-weight: 600;
   background: -webkit-linear-gradient(
     0deg,
     hsla(223, 89%, 37%, 0.854),
@@ -1677,16 +1677,17 @@ blog {
 @media (min-width: 1200px) {
   .partners-container {
     max-width: 1400px;
+    margin-block: 10px;
   }
   .partner-slide {
-    margin: 14px;
+    margin: 10px;
   }
   .partner-icon {
     font-size: 30px;
     margin-block: 18px;
   }
   .partner-icon img {
-    width: 80px;
+    width: 90px;
     border-radius: 50%;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   }
@@ -1696,9 +1697,10 @@ blog {
 @media (min-width: 768px) and (max-width: 1199px) {
   .partners-container {
     max-width: 1000px;
+    margin-block: 10px;
   }
   .partner-slide {
-    margin: 15px;
+    margin: 10px;
   }
   .partner-icon {
     font-size: 25px;
@@ -1721,7 +1723,7 @@ blog {
   }
   .partner-icon {
     font-size: 25px;
-    margin: 15px;
+    margin: 10px;
   }
 
   .partner-icon img {
